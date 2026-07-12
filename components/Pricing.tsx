@@ -23,6 +23,9 @@ export default function Pricing() {
         <div className="mt-12 grid lg:grid-cols-2 gap-5 max-w-4xl mx-auto items-stretch">
           {PRICING.cards.map((c, i) => {
             const dark = c.highlight;
+            const priceMatch = c.price ? /^(de la\s+)?(.+)$/.exec(c.price) : null;
+            const pricePrefix = priceMatch?.[1]?.trim();
+            const priceNum = priceMatch?.[2] ?? c.price;
             return (
               <Reveal key={c.name} delay={i * 0.1}>
                 <div
@@ -49,14 +52,22 @@ export default function Pricing() {
                     {c.name}
                   </h3>
 
-                  <div className="mt-4 flex items-end gap-2">
+                  <div className="mt-4 flex items-end gap-x-2 gap-y-1 flex-wrap">
                     {c.price ? (
                       <>
+                        {pricePrefix && (
+                          <span
+                            className="mb-2 text-sm font-medium self-end whitespace-nowrap"
+                            style={{ opacity: 0.72 }}
+                          >
+                            {pricePrefix}
+                          </span>
+                        )}
                         <span
                           className="font-display leading-none"
-                          style={{ fontSize: "3.4rem", fontWeight: 380, color: dark ? "var(--color-gold)" : "var(--color-evergreen)" }}
+                          style={{ fontSize: "clamp(2.4rem, 1.3rem + 4.4vw, 3.4rem)", fontWeight: 380, color: dark ? "var(--color-gold)" : "var(--color-evergreen)" }}
                         >
-                          {c.price}
+                          {priceNum}
                         </span>
                         <span className="mb-2 text-lg" style={{ opacity: 0.8 }}>
                           {c.currency}
@@ -65,7 +76,7 @@ export default function Pricing() {
                     ) : (
                       <span
                         className="font-display leading-none"
-                        style={{ fontSize: "1.9rem", fontWeight: 400, color: dark ? "var(--color-gold)" : "var(--color-forest)" }}
+                        style={{ fontSize: "clamp(1.6rem, 1.1rem + 2vw, 1.9rem)", fontWeight: 400, color: dark ? "var(--color-gold)" : "var(--color-forest)" }}
                       >
                         Personalizat
                       </span>

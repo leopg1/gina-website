@@ -37,7 +37,11 @@ export default function Hero() {
   };
 
   return (
-    <section id="top" ref={ref} className="relative overflow-hidden pt-28 lg:pt-32 pb-16 lg:pb-24">
+    <section
+      id="top"
+      ref={ref}
+      className="relative overflow-hidden pt-28 pb-16 lg:pt-20 lg:pb-8 lg:min-h-screen lg:flex lg:items-center"
+    >
       {/* decorative background */}
       <div aria-hidden className="absolute inset-0 -z-10">
         <div
@@ -50,7 +54,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container-x grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+      <div className="container-x w-full grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
         {/* — Text — */}
         <motion.div style={{ y }} className="lg:col-span-7 relative z-10">
           <motion.span
@@ -93,7 +97,7 @@ export default function Hero() {
             initial={reduce ? false : { opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: EASE, delay: 0.45 }}
-            className="lead mt-7 max-w-xl"
+            className="lead mt-6 max-w-xl"
           >
             {HERO.sub}
           </motion.p>
@@ -102,7 +106,7 @@ export default function Hero() {
             initial={reduce ? false : { opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: EASE, delay: 0.58 }}
-            className="mt-9 flex flex-wrap items-center gap-3"
+            className="mt-8 flex flex-wrap items-center gap-3"
           >
             <a href="#contact" className="btn btn-primary">
               {HERO.ctaPrimary}
@@ -123,7 +127,7 @@ export default function Hero() {
             initial={reduce ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.72 }}
-            className="mt-9 flex flex-wrap gap-2 sm:gap-2.5"
+            className="mt-7 flex flex-wrap gap-2 sm:gap-2.5"
           >
             {HERO.trust.map((t) => (
               <li
@@ -146,15 +150,15 @@ export default function Hero() {
         </motion.div>
 
         {/* — Video portrait — */}
-        <div className="lg:col-span-5 relative">
+        <div className="lg:col-span-5 relative flex justify-center">
           <motion.div
             initial={reduce ? false : { opacity: 0, scale: 1.04 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: EASE, delay: 0.2 }}
-            className="relative mx-auto max-w-[24rem] lg:max-w-none"
+            className="relative mx-auto w-full max-w-[24rem] lg:mx-0 lg:w-auto lg:max-w-none lg:h-[min(74vh,42rem)]"
           >
             <div
-              className="relative overflow-hidden"
+              className="relative overflow-hidden w-full aspect-[9/16] lg:w-auto lg:h-full"
               style={{
                 borderRadius: "13rem 13rem 1.6rem 1.6rem",
                 boxShadow: "var(--shadow-image)",
@@ -162,8 +166,7 @@ export default function Hero() {
             >
               <video
                 ref={videoRef}
-                className="w-full h-auto block"
-                style={{ aspectRatio: "720 / 1280", objectFit: "cover" }}
+                className="w-full h-full block object-cover"
                 src="/video/hero.mp4"
                 poster={img("portrait-store").src}
                 autoPlay={!reduce}

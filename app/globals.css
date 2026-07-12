@@ -135,7 +135,7 @@ section[id],
   font-optical-sizing: auto;
   line-height: 0.98;
   letter-spacing: -0.02em;
-  font-size: clamp(2.7rem, 1.4rem + 5.6vw, 6.2rem);
+  font-size: clamp(2.6rem, 1.5rem + 4.6vw, 5.5rem);
 }
 .h1 {
   font-family: var(--font-display);
