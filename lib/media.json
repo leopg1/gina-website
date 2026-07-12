@@ -1,0 +1,100 @@
+{
+  "portrait-store": {
+    "src": "/images/portraits/portrait-store.webp",
+    "width": 1170,
+    "height": 1559,
+    "blurDataURL": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAACwBQCdASoYACAAPtleo02oJaMiN/qoAQAbCWQAnTMM8YBKP+7FEPrz3shnmtXu2jdBJBohMQAA/pqVQaIXZgvyWsW636pp0R1h3tqVLxnUcrwuLiKnTlP/1aeiBnNMzpXf/pPxImGaItetQFZcLnmu8LYeFErJgp4mdMjpRMduwAsZLuuIKjMAT6vrYv8hFlBj1VgzFQAyjqG0ni7fWrfTRa06W1R688MZ/7Af2h3bgJEPX3yIP79oyAA=",
+    "category": "portraits"
+  },
+  "recipe-1": {
+    "src": "/images/recipes/recipe-1.webp",
+    "width": 960,
+    "height": 1200,
+    "blurDataURL": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABwBgCdASoYAB4APu1usFIppiSiqAgBMB2JbACdOUFUvgCAZqtNerlEBd7Sa2L0OOEmuoEViulQZfRzjQAA960YkoSfwX2jix29vWskZFKUE8C0DKMGTub2Tg/4V72MouYFAxoqJ8YiZTHHiCkTpcNyaTKavOY9WWLyEq35K3KR350I6AEj6qE7C8xuy/rT/1EFRcug+Ds0U3l7640buEKvDIRBRJgAAAA=",
+    "category": "recipes"
+  },
+  "recipe-2": {
+    "src": "/images/recipes/recipe-2.webp",
+    "width": 1080,
+    "height": 1350,
+    "blurDataURL": "data:image/webp;base64,UklGRtoAAABXRUJQVlA4IM4AAAAQBgCdASoYAB4APuVepk2pJSOiN/VYASAciWwAnTLT6piPSFgKbj2ClhQuokCnhTSvpccJDISd8NgA/tUU61tZR/6nLmJQ0L9raDpXxtslbwRhaHnIyS4QAbkwNDcWQmgi2KehfFZJZKHdukyu4USGzb2scdvSw6qjLpbx9+Zs+Xuql9e6aMFatEA7FBRO77bBJJPEBL64P2upmHNZVa1kSoWIbyiSD/eDpNGtHhy2UdUmEwVxMDYck99Ctk98lJ+q/s1e5hsTmVgY2lEAAA==",
+    "category": "recipes"
+  },
+  "recipe-3": {
+    "src": "/images/recipes/recipe-3.webp",
+    "width": 1300,
+    "height": 1625,
+    "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAACQBQCdASoYAB4APu1qrlCppiQiqAqpMB2JagC+aL/JU1oBmo/zpbP6iISVF5Z6DyGlrWg84AD+/HelXwBO74abyaPtzicahPByakRs6NqrmmF38d7CwMlLusthnSgDC5r+4AS2OplO3faZ4RcUpT4mKFkOtEdVxiHtecjRIWJgqPBIXOcWmqERRgnPrwX4tKgAAA==",
+    "category": "recipes"
+  },
+  "recipe-4": {
+    "src": "/images/recipes/recipe-4.webp",
+    "width": 1300,
+    "height": 975,
+    "blurDataURL": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBQCdASoYABIAPu1mq06ppaQiKA1RMB2JYgCdMuI6ABPfKZb7BitUCi5zLzUsUoigAP2Omo1QTe9DS53q2pEzkGJb60GVSoJVNVQX6YtQ1zjZs1CAtAxY3aAtEGE5mVHnf4+WtpKu2FMbXB6511E/cbFjmGPzZagZPF1DB4xUoc/EB586LzEQhgI934lmOAA=",
+    "category": "recipes"
+  },
+  "recipe-5": {
+    "src": "/images/recipes/recipe-5.webp",
+    "width": 1300,
+    "height": 1625,
+    "blurDataURL": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAADQBQCdASoYAB4APuVgo02pJaMiMAwBIByJYgC06CHgTlx0a5NUpxn2vVHwEf1cFx9CnYXNqecAAP7nHxL+aUlXFHxP/OpmOlTACmXXl8YZ0kIxmhusy4MGOTu+9stB3D41gEZgEnboQr+Bs/W48k0SuF12UEQLn11jiFxQi/QwEQ3fiPXiUagAwm+5HJ3//Jz1VukcIO5rGPrE3RnoXgAA",
+    "category": "recipes"
+  },
+  "recipe-6": {
+    "src": "/images/recipes/recipe-6.webp",
+    "width": 1080,
+    "height": 1350,
+    "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADQBQCdASoYAB4APu1qrlCppaQiqAqpMB2JZACsMvIBN2dNkbMfhqXnqQ5Vqmk8xt2lzpmKjjEAAP7nP2Brm/JinTrKAvgl+hDfLAI8ThWfA8HOz85XVdteHrWCApsB82Hdzm49PFndXEIoDXh/ihLtaGHPMJc1TKfMZHjos/2anfRlS1L51qps7SPvFMkVz/h6u4AAAAA=",
+    "category": "recipes"
+  },
+  "lifestyle-water": {
+    "src": "/images/lifestyle/lifestyle-water.webp",
+    "width": 1080,
+    "height": 1350,
+    "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAACwBQCdASoYAB4APu1sqk6ppqOiMBgIATAdiWYAgN0DlEyAr2k48hJ8czyu/d9ZWJjQNtpsBQAA/tOHY+I7/1L9XsQ2b7ok2DUTVBjyUJ/ZylL/eI5DkfN4yfgvRKE5V+MslvIvK5XrqCC1ZPp/rQqaH7XE70Tmp3i6JJI5ZmRQsJ+SpwlrYP94ehnkAAAA",
+    "category": "lifestyle"
+  },
+  "transform-1": {
+    "src": "/images/results/transform-1.webp",
+    "width": 1300,
+    "height": 1300,
+    "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBQCdASoYABgAPuleo02pJSMiMAwBIB0JQBdgBC5dqdegD6vqpA74YiU8a9k4tmQAAP6r/qrETx3QzYwuPCjXZWTcwfiuEZ81nUAHywYVUyvM/oSyIqhWJya5GtSHQKbJe2nykxwf6SNf/lfjY4kfOhX18s+PNmadAgCtjAA=",
+    "category": "results"
+  },
+  "transform-2": {
+    "src": "/images/results/transform-2.webp",
+    "width": 1300,
+    "height": 1300,
+    "blurDataURL": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwBACdASoYABgAPu1srVIppaQiqAgBMB2JQBOmW0grVQ+0iHRr8kN6r9F2EytSNIAA/oeRFYbJkMMTmOI12azBVoy43AYTpaAPCkcgWOm9nmRX1/2Y375aigfJNEpluMq05W+87antFzZgpCE88Ejrjg3Ha6LfZDMFrIGlA5QvGUnnEu6KP52d30ZjYvAoH5ZDZKDAAAA=",
+    "category": "results"
+  },
+  "transform-3": {
+    "src": "/images/results/transform-3.webp",
+    "width": 1300,
+    "height": 1300,
+    "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAACwBQCdASoYABgAPu1kq0+ppSOiMBgIATAdiWQAnTLfATi4fB8FVkUiw4PuHHUBczD7jyH90AAA/renGNGm9Nyg1oDskA+pLpBekB/Ql83tAosGndlqDPqei33aRT3ejTYnK3TCnc4ZM48cxVlq3COZ+SlGxgatA71c6v+Z0WwoTAAotva79gzXhrqwZZHs1SnLNZBtium0iov+5DGC1vh6sJideAAA",
+    "category": "results"
+  },
+  "transform-4": {
+    "src": "/images/results/transform-4.webp",
+    "width": 1300,
+    "height": 1300,
+    "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQBACdASoYABgAPu1qrVCppaQiqAqpMB2JZQC7AAxiFfNNRyir7sDNn7XeAgoDAAD+01n0CxCb9T4+UBESdXn0578AbosOYw+/FEAYkeQGp6JtepMzAwqkVFc/cPjEAokK1RqeF5olUN94rr2ojYjZG5YDYNm7+s7MpWn8tQk3HzAA",
+    "category": "results"
+  },
+  "transform-5": {
+    "src": "/images/results/transform-5.webp",
+    "width": 1300,
+    "height": 1300,
+    "blurDataURL": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAABQBQCdASoYABgAPu1srlIppaQiqAgBMB2JYwCo9AxAdOX9u4eSObKAjmUvh0BjB01P90AA/PRwz+KxrsjahuXZd7rmLxVZ/gDzMMFfbDtf2IYxGGQ2vDyWBYkbn1nBt0s2u+wgIzLOXdRmVPO/h8VKN7tac5fbkIwJhtMtBamjP1txwcyEtoqZnRzjLOcKOBWQpPy00MFhADMi3IHpZU7wdAI95sxxohNjlijAAAA=",
+    "category": "results"
+  },
+  "transform-6": {
+    "src": "/images/results/transform-6.webp",
+    "width": 1300,
+    "height": 1300,
+    "blurDataURL": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAADQBQCdASoYABgAPu1sq1EppaOiqAqpMB2JZgCdMzL1OCNW9H/A5SqWBeVSeETtOz3pWEGTj89AAPpx8BbPiGcAp5RPnNzGEfkR28+UaetX/xw25fPkeHy3V480+HjHw06QMpd1kEwAiZhbtbKuWaGPbN3sYS6Kp3P96xe3cttv/c5KUbjNO7UoR7LYagwZtME1IBX1XjusgXPCOQxBiKNJOqAAAA==",
+    "category": "results"
+  }
+}
