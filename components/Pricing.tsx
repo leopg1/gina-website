@@ -31,7 +31,7 @@ export default function Pricing() {
                 <div
                   className="h-full p-8 lg:p-9 rounded-[1.5rem] flex flex-col relative overflow-hidden"
                   style={{
-                    background: dark ? "var(--color-evergreen)" : "var(--color-parchment)",
+                    background: dark ? "var(--color-rose)" : "var(--color-parchment)",
                     color: dark ? "var(--color-cream)" : "var(--color-ink)",
                     border: dark ? "none" : "1px solid var(--color-line)",
                     boxShadow: dark ? "var(--shadow-lift)" : "var(--shadow-soft)",
@@ -40,7 +40,7 @@ export default function Pricing() {
                   {dark && (
                     <span
                       className="inline-flex self-start mb-3 text-[0.66rem] font-semibold uppercase tracking-wider px-3 py-1 rounded-full"
-                      style={{ background: "var(--color-gold)", color: "#2a2113", letterSpacing: "0.1em" }}
+                      style={{ background: "var(--color-gold-light)", color: "var(--color-evergreen)", letterSpacing: "0.1em" }}
                     >
                       Recomandat
                     </span>
@@ -65,7 +65,7 @@ export default function Pricing() {
                         )}
                         <span
                           className="font-display leading-none"
-                          style={{ fontSize: "clamp(2.4rem, 1.3rem + 4.4vw, 3.4rem)", fontWeight: 380, color: dark ? "var(--color-gold)" : "var(--color-evergreen)" }}
+                          style={{ fontSize: "clamp(2.4rem, 1.3rem + 4.4vw, 3.4rem)", fontWeight: 500, color: dark ? "var(--color-gold-light)" : "var(--color-evergreen)" }}
                         >
                           {priceNum}
                         </span>
@@ -76,7 +76,7 @@ export default function Pricing() {
                     ) : (
                       <span
                         className="font-display leading-none"
-                        style={{ fontSize: "clamp(1.6rem, 1.1rem + 2vw, 1.9rem)", fontWeight: 400, color: dark ? "var(--color-gold)" : "var(--color-forest)" }}
+                        style={{ fontSize: "clamp(1.6rem, 1.1rem + 2vw, 1.9rem)", fontWeight: 500, color: dark ? "var(--color-gold-light)" : "var(--color-forest)" }}
                       >
                         Personalizat
                       </span>
@@ -85,7 +85,7 @@ export default function Pricing() {
 
                   <p
                     className="mt-3 text-[0.96rem]"
-                    style={{ color: dark ? "color-mix(in srgb, var(--color-cream) 80%, transparent)" : "var(--color-muted)" }}
+                    style={{ color: dark ? "color-mix(in srgb, var(--color-cream) 92%, transparent)" : "var(--color-muted)" }}
                   >
                     {c.desc}
                   </p>
@@ -96,13 +96,13 @@ export default function Pricing() {
                         <span
                           className="mt-0.5 shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full"
                           style={{
-                            background: dark ? "color-mix(in srgb, var(--color-gold) 26%, transparent)" : "color-mix(in srgb, var(--color-sage) 24%, transparent)",
-                            color: dark ? "var(--color-gold)" : "var(--color-moss)",
+                            background: dark ? "color-mix(in srgb, var(--color-gold-light) 22%, transparent)" : "color-mix(in srgb, var(--color-sage) 24%, transparent)",
+                            color: dark ? "var(--color-gold-light)" : "var(--color-moss)",
                           }}
                         >
                           <Check width={12} height={12} />
                         </span>
-                        <span style={{ color: dark ? "color-mix(in srgb, var(--color-cream) 88%, transparent)" : "var(--color-ink)" }}>
+                        <span style={{ color: dark ? "color-mix(in srgb, var(--color-cream) 94%, transparent)" : "var(--color-ink)" }}>
                           {inc}
                         </span>
                       </li>
@@ -113,7 +113,7 @@ export default function Pricing() {
                     href={c.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`btn mt-8 ${dark ? "btn-on-dark" : "btn-ghost"}`}
+                    className={`btn mt-8 ${dark ? "btn-gold" : "btn-ghost"}`}
                   >
                     {dark ? (
                       <>
@@ -123,7 +123,7 @@ export default function Pricing() {
                     ) : (
                       <>
                         {c.cta}
-                        <ArrowUpRight width={16} height={16} />
+                        <ArrowUpRight width={16} height={16} className="btn-arrow" />
                       </>
                     )}
                   </a>

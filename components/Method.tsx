@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import AvocadoLoop from "./AvocadoLoop";
 import { METHOD } from "@/lib/content";
 
 export default function Method() {
@@ -6,14 +7,15 @@ export default function Method() {
     <section
       id="metoda"
       className="section relative overflow-hidden"
-      style={{ background: "var(--color-evergreen)", color: "var(--color-cream)" }}
+      style={{ background: "var(--color-rose)", color: "var(--color-cream)" }}
     >
       <div
         aria-hidden
-        className="absolute top-0 right-0 w-[36rem] h-[36rem] rounded-full blur-3xl opacity-[0.12]"
-        style={{ background: "radial-gradient(circle, var(--color-sage), transparent 65%)" }}
+        className="absolute top-0 right-0 w-[36rem] h-[36rem] rounded-full blur-3xl opacity-[0.1]"
+        style={{ background: "radial-gradient(circle, var(--color-gold-light), transparent 65%)" }}
       />
       <div className="container-x relative">
+        <AvocadoLoop className="mx-auto -mt-6 mb-4 w-40 lg:absolute lg:-top-14 lg:right-0 lg:mx-0 lg:my-0 lg:w-[21rem]" />
         <div className="max-w-2xl">
           <Reveal>
             <span className="eyebrow eyebrow-light">{METHOD.eyebrow}</span>
@@ -26,7 +28,7 @@ export default function Method() {
           <Reveal delay={0.1}>
             <p
               className="mt-5 text-[1.08rem]"
-              style={{ color: "color-mix(in srgb, var(--color-cream) 78%, transparent)" }}
+              style={{ color: "color-mix(in srgb, var(--color-cream) 92%, transparent)" }}
             >
               {METHOD.sub}
             </p>
@@ -42,7 +44,7 @@ export default function Method() {
               >
                 <span
                   className="font-display block"
-                  style={{ fontSize: "3rem", lineHeight: 1, color: "var(--color-gold)", fontWeight: 380 }}
+                  style={{ fontSize: "3rem", lineHeight: 1, color: "var(--color-gold-light)", fontWeight: 500 }}
                 >
                   {s.n}
                 </span>
@@ -55,7 +57,7 @@ export default function Method() {
               </h3>
               <p
                 className="mt-2.5 text-[0.95rem] leading-relaxed"
-                style={{ color: "color-mix(in srgb, var(--color-cream) 72%, transparent)" }}
+                style={{ color: "color-mix(in srgb, var(--color-cream) 90%, transparent)" }}
               >
                 {s.desc}
               </p>

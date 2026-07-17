@@ -10,6 +10,9 @@ import { Instagram, ArrowUpRight } from "./icons";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
+/** Rotații alternante pentru polaroide (grade) — ca pozele prinse pe frigider. */
+const ROTS = [-2, 1.6, -1.2, 2, -1.6, 1.1];
+
 export default function Recipes() {
   const reduce = useReducedMotion();
   return (
@@ -42,45 +45,50 @@ export default function Recipes() {
           </Reveal>
         </div>
 
-        {/* Uniform 4:5 grid → flush bottom */}
-        <div className="mt-12 grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
-          {RECIPES.items.map((r, i) => (
-            <motion.figure
-              key={r.name}
-              initial={reduce ? false : { opacity: 0, y: 28, scale: 0.97 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "0px 0px -6% 0px" }}
-              transition={{ duration: 0.65, ease: EASE, delay: (i % 3) * 0.07 }}
-              className="group relative aspect-[4/5] overflow-hidden rounded-[var(--radius-media)]"
-              style={{ boxShadow: "var(--shadow-soft)" }}
-            >
-              <Image
-                {...imgFill(r.name)}
-                alt={alt(r.name)}
-                sizes="(max-width: 1024px) 46vw, 31vw"
-                className="object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.07]"
-              />
-              <div
-                className="absolute inset-0 flex items-end p-4 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(20,31,26,0.85) 0%, rgba(20,31,26,0.15) 46%, transparent 72%)",
-                }}
+        {/* Polaroide rotite cu bandă adezivă — ca pozele prinse pe frigider */}
+        <div className="mt-14 grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+          {RECIPES.items.map((r, i) => {
+            const rot = ROTS[i % ROTS.length];
+            return (
+              <motion.div
+                key={r.name}
+                initial={reduce ? false : { opacity: 0, y: 28 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "0px 0px -6% 0px" }}
+                transition={{ duration: 0.65, ease: EASE, delay: (i % 3) * 0.07 }}
               >
-                <figcaption
-                  className="font-display text-balance lg:translate-y-2 lg:group-hover:translate-y-0 transition-transform duration-500"
-                  style={{
-                    color: "var(--color-cream)",
-                    fontSize: "clamp(0.9rem, 0.8rem + 0.35vw, 1.1rem)",
-                    fontWeight: 480,
-                    lineHeight: 1.2,
-                  }}
+                <figure
+                  className="polaroid group rotate-[var(--rot)] transition-[rotate,translate,box-shadow] duration-500 hover:rotate-0 hover:-translate-y-1.5 hover:[box-shadow:var(--shadow-lift)]!"
+                  style={{ ["--rot"]: `${rot}deg` } as React.CSSProperties}
                 >
-                  {r.title}
-                </figcaption>
-              </div>
-            </motion.figure>
-          ))}
+                  <span
+                    className="polaroid-tape"
+                    aria-hidden
+                    style={{ transform: `translateX(-50%) rotate(${i % 2 ? 2.5 : -3}deg)` }}
+                  />
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-[3px]">
+                    <Image
+                      {...imgFill(r.name)}
+                      alt={alt(r.name)}
+                      sizes="(max-width: 1024px) 46vw, 31vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption
+                    className="font-display py-3 text-center text-balance"
+                    style={{
+                      color: "var(--color-ink)",
+                      fontSize: "1.02rem",
+                      fontWeight: 500,
+                      lineHeight: 1.25,
+                    }}
+                  >
+                    {r.title}
+                  </figcaption>
+                </figure>
+              </motion.div>
+            );
+          })}
         </div>
 
         <Reveal>

@@ -133,17 +133,17 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block p-6 rounded-[1.3rem]"
-                style={{ background: "var(--color-evergreen)", color: "var(--color-cream)" }}
+                style={{ background: "var(--color-rose)", color: "var(--color-cream)" }}
               >
                 <div className="flex items-start gap-3">
-                  <span style={{ color: "var(--color-gold)" }} className="mt-0.5">
+                  <span style={{ color: "var(--color-gold-light)" }} className="mt-0.5">
                     <Instagram width={22} height={22} />
                   </span>
                   <div>
                     <h3 className="font-display" style={{ fontSize: "1.18rem", color: "var(--color-cream)", fontWeight: 460 }}>
                       Scrie-mi START pe Instagram
                     </h3>
-                    <p className="text-[0.9rem]" style={{ color: "color-mix(in srgb, var(--color-cream) 78%, transparent)" }}>
+                    <p className="text-[0.9rem]" style={{ color: "color-mix(in srgb, var(--color-cream) 92%, transparent)" }}>
                       Cel mai rapid răspuns, direct de la mine
                     </p>
                     <span className="inline-flex items-center gap-2 mt-2 text-[0.9rem] font-semibold" style={{ color: "var(--color-gold-light)" }}>

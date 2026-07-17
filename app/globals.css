@@ -3,43 +3,44 @@
 /* ============================================================
    HEALTHY BY GINNA — Gina Tăujan · Psihonutriționist
    Reeducare alimentară · #WEDONTDIETWELIFESTYLE
-   Fresh, natural "farmer's market" wellness design system
+   Brand din logo: terracotta #BD3D1F · lime avocado #DFD84B · alb
+   Hand-drawn, cald, "farmer's market"
    ============================================================ */
 
 @theme {
-  /* — Warm neutrals / canvas — */
-  --color-cream: #f6f1e7;      /* main background */
-  --color-ivory: #fbf7ef;      /* raised surface */
-  --color-sand: #ece2d0;       /* deeper warm band */
+  /* — Warm neutrals / canvas (o singură familie caldă, peach-cream) — */
+  --color-cream: #faf1e6;      /* main background */
+  --color-ivory: #fef9f1;      /* raised surface */
+  --color-sand: #f3e3d0;       /* deeper warm band */
   --color-parchment: #fffdf8;  /* card white */
 
-  /* — Greens (primary) — */
-  --color-evergreen: #22352a;  /* darkest green, near-black */
-  --color-forest: #2f4a3a;     /* buttons / dark sections */
-  --color-pine: #3d5c49;       /* mid green */
-  --color-sage: #86977c;       /* soft sage/olive secondary */
-  --color-moss: #5f7458;
+  /* — Charcoal cald, aproape negru (ancora neutră a paletei) — */
+  --color-evergreen: #262019;  /* charcoal: secțiuni închise + titluri */
+  --color-forest: #9c3115;     /* terracotta deep: text accent AA pe crem */
+  --color-pine: #6e5a4c;       /* neutru cald (marquee) */
+  --color-sage: #eeb992;       /* peach wash: fill-uri/borduri fine pe deschis */
+  --color-moss: #a63417;       /* terracotta adânc: bife/iconițe mici pe crem (AA) */
 
-  /* — Warm accents — */
-  --color-gold: #b0894c;       /* logo bronze, large/decorative */
-  --color-gold-ink: #8f6b2b;   /* AA-safe gold as TEXT on light (4.3:1) */
-  --color-gold-light: #c8a769; /* AA-safe gold as TEXT on dark (6:1) */
-  --color-bronze: #7c5c2e;     /* AA-safe on cream for small text */
-  --color-blush: #f0cbb2;      /* soft peach fill (Liber la caise 🍉) */
-  --color-peach: #eab68f;      /* warm apricot fill, decorative */
-  --color-rose: #c67d55;       /* apricot/terracotta accent */
-  --color-clay: #a85a3e;       /* deeper terracotta for small text (AA on cream) */
+  /* — Terracotta + lime (culorile logo-ului) — */
+  --color-gold: #bd3d1f;       /* terracotta decorativ (din logo) */
+  --color-gold-ink: #9c3115;   /* terracotta AA ca TEXT pe crem (7:1) */
+  --color-gold-light: #dfd84b; /* lime avocado — DOAR pe suprafețe închise/terracotta */
+  --color-bronze: #9c3115;     /* eyebrows pe crem — terracotta deep */
+  --color-blush: #f2cdb7;      /* peach soft fill */
+  --color-peach: #ecb28c;      /* apricot cald, decorativ */
+  --color-rose: #bd3d1f;       /* terracotta accent (butoane, navbar, hero) */
+  --color-clay: #9c3115;       /* terracotta pentru text mic (AA) */
 
   /* — Ink / text — */
-  --color-ink: #221d18;        /* primary text on light */
-  --color-muted: #57503f;      /* secondary text on light (AA on cream) */
-  --color-faint: #6b6250;      /* tertiary (AA on cream/ivory/sand) */
-  --color-line: #e3d8c5;       /* hairlines on cream */
-  --color-line-dark: #3c4c41;  /* hairlines on dark */
+  --color-ink: #2a1c14;        /* text principal, maro-cărbune cald */
+  --color-muted: #6e5a4c;      /* text secundar (AA pe crem) */
+  --color-faint: #7d6a58;      /* terțiar (AA pe crem/ivory) */
+  --color-line: #ebdbc6;       /* linii fine pe crem */
+  --color-line-dark: #a63417;  /* linii fine pe terracotta */
 
   /* — Fonts — */
-  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
-  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-shantell), "Trebuchet MS", system-ui, sans-serif;
+  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
 
   /* — Radius — */
   --radius-sm: 0.85rem;
@@ -48,10 +49,10 @@
   --radius-lg: 1.5rem;
   --radius-xl: 2rem;
 
-  /* — Shadows (soft, premium) — */
-  --shadow-soft: 0 1px 2px rgba(31, 49, 40, 0.04), 0 12px 32px -12px rgba(31, 49, 40, 0.14);
-  --shadow-lift: 0 2px 6px rgba(31, 49, 40, 0.06), 0 30px 60px -24px rgba(31, 49, 40, 0.24);
-  --shadow-image: 0 30px 70px -30px rgba(31, 49, 40, 0.38);
+  /* — Shadows (soft, premium, warm) — */
+  --shadow-soft: 0 1px 2px rgba(58, 32, 18, 0.04), 0 12px 32px -12px rgba(58, 32, 18, 0.14);
+  --shadow-lift: 0 2px 6px rgba(58, 32, 18, 0.06), 0 30px 60px -24px rgba(58, 32, 18, 0.24);
+  --shadow-image: 0 30px 70px -30px rgba(58, 32, 18, 0.38);
 
   /* — Easing (unified with Motion components) — */
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
@@ -131,32 +132,31 @@ section[id],
 
 .h-hero {
   font-family: var(--font-display);
-  font-weight: 340;
-  font-optical-sizing: auto;
-  line-height: 0.98;
-  letter-spacing: -0.02em;
-  font-size: clamp(2.6rem, 1.5rem + 4.6vw, 5.5rem);
+  font-weight: 640;
+  line-height: 1.04;
+  letter-spacing: -0.012em;
+  font-size: clamp(2.3rem, 1.35rem + 4vw, 4.6rem);
 }
 .h1 {
   font-family: var(--font-display);
-  font-weight: 360;
-  line-height: 1.02;
-  letter-spacing: -0.018em;
-  font-size: clamp(2.2rem, 1.3rem + 3.6vw, 4.1rem);
+  font-weight: 620;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.95rem, 1.2rem + 3vw, 3.5rem);
 }
 .h2 {
   font-family: var(--font-display);
-  font-weight: 380;
-  line-height: 1.08;
-  letter-spacing: -0.014em;
-  font-size: clamp(1.75rem, 1.15rem + 2.2vw, 2.9rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.008em;
+  font-size: clamp(1.6rem, 1.1rem + 1.9vw, 2.5rem);
 }
 .h3 {
   font-family: var(--font-display);
-  font-weight: 420;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-  font-size: clamp(1.3rem, 1.05rem + 1vw, 1.7rem);
+  font-weight: 580;
+  line-height: 1.2;
+  letter-spacing: -0.006em;
+  font-size: clamp(1.25rem, 1rem + 0.9vw, 1.6rem);
 }
 .lead {
   font-size: clamp(1.075rem, 0.98rem + 0.5vw, 1.3rem);
@@ -168,12 +168,12 @@ section[id],
 .eyebrow {
   font-family: var(--font-sans);
   text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-weight: 650;
+  letter-spacing: 0.22em;
+  font-weight: 750;
   font-size: 0.72rem;
   color: var(--color-bronze);
 }
-.eyebrow-light { color: var(--color-gold-light); }
+.eyebrow-light { color: color-mix(in srgb, var(--color-cream) 92%, transparent); }
 
 /* ---------- Layout ---------- */
 .container-x {
@@ -200,25 +200,38 @@ section[id],
   padding: 0.95rem 1.6rem;
   border-radius: 999px;
   cursor: pointer;
-  transition: transform 0.3s var(--ease-out-soft), background-color 0.4s ease,
+  /* back-out ușor elastic → butonul se simte „viu" la hover/apăsare */
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.4s ease,
     color 0.4s ease, box-shadow 0.5s var(--ease-out-soft), border-color 0.4s ease;
   will-change: transform;
 }
-.btn:active { transform: scale(0.98); }
+.btn:active { transform: scale(0.94); }
+
+/* Săgeata din buton alunecă la hover (marchează săgețile cu .btn-arrow) */
+.btn .btn-arrow { transition: transform 0.3s var(--ease-out-soft); }
+.btn:hover .btn-arrow { transform: translateX(4px); }
+
+/* Iconițele din carduri fac un mic wiggle la hover pe card */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  30% { transform: rotate(-8deg); }
+  60% { transform: rotate(8deg); }
+}
+.card-hover:hover .icon-chip svg { animation: wiggle 0.5s var(--ease-in-out-soft); }
 
 .btn-primary {
-  background: var(--color-evergreen);
-  color: var(--color-cream);
+  background: var(--color-rose);
+  color: #fff;
   box-shadow: var(--shadow-soft);
 }
 .btn-primary:hover {
-  background: var(--color-forest);
+  background: #a63417;
   box-shadow: var(--shadow-lift);
   transform: translateY(-2px);
 }
-.btn-gold { background: var(--color-gold); color: #2a2113; }
+.btn-gold { background: var(--color-gold-light); color: var(--color-evergreen); }
 .btn-gold:hover {
-  background: #c39a5b;
+  background: #e7e161;
   transform: translateY(-2px);
   box-shadow: var(--shadow-lift);
 }
@@ -273,6 +286,28 @@ section[id],
   background: color-mix(in srgb, var(--color-sage) 18%, var(--color-ivory));
   color: var(--color-forest);
   border: 1px solid color-mix(in srgb, var(--color-sage) 32%, transparent);
+}
+
+/* ---------- Polaroid (rețete) ---------- */
+.polaroid {
+  position: relative;
+  background: #fffdf8;
+  border: 1px solid var(--color-line);
+  border-radius: 0.35rem;
+  box-shadow: var(--shadow-soft);
+  padding: 0.6rem 0.6rem 0;
+}
+.polaroid-tape {
+  position: absolute;
+  top: -0.7rem;
+  left: 50%;
+  width: 5.2rem;
+  height: 1.5rem;
+  transform: translateX(-50%) rotate(-3deg);
+  background: color-mix(in srgb, var(--color-blush) 55%, rgba(255, 255, 255, 0.6));
+  opacity: 0.92;
+  box-shadow: 0 1px 3px rgba(58, 32, 18, 0.1);
+  pointer-events: none;
 }
 
 /* ---------- Decorative ---------- */

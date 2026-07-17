@@ -30,12 +30,12 @@ export default function FloatingCTA() {
           whileHover={{ scale: 1.06 }}
           className="fixed z-40 bottom-5 right-5 inline-flex items-center gap-2.5 pl-4 pr-5 py-3.5 rounded-full font-semibold text-[0.94rem]"
           style={{
-            background: "var(--color-evergreen)",
-            color: "var(--color-cream)",
-            boxShadow: "0 14px 34px -10px rgba(31,49,40,0.6)",
+            background: "var(--color-gold-light)",
+            color: "var(--color-evergreen)",
+            boxShadow: "0 14px 34px -10px rgba(58, 32, 18, 0.4)",
           }}
         >
-          <span style={{ color: "var(--color-gold)" }}>
+          <span style={{ color: "var(--color-evergreen)" }}>
             <Instagram width={22} height={22} />
           </span>
           <span className="hidden sm:inline">Scrie-mi START</span>

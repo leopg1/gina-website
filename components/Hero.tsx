@@ -41,36 +41,24 @@ export default function Hero() {
       id="top"
       ref={ref}
       className="relative overflow-hidden pt-28 pb-16 lg:pt-20 lg:pb-8 lg:min-h-screen lg:flex lg:items-center"
+      style={{ background: "var(--color-rose)" }}
     >
       {/* decorative background */}
-      <div aria-hidden className="absolute inset-0 -z-10">
+      <div aria-hidden className="absolute inset-0 -z-0">
         <div
-          className="absolute -top-24 -right-24 w-[42rem] h-[42rem] rounded-full blur-3xl opacity-45"
-          style={{ background: "radial-gradient(circle, var(--color-peach), transparent 62%)" }}
+          className="absolute -top-24 -right-24 w-[42rem] h-[42rem] rounded-full blur-3xl opacity-25"
+          style={{ background: "radial-gradient(circle, var(--color-gold-light), transparent 62%)" }}
         />
         <div
-          className="absolute top-1/3 -left-40 w-[38rem] h-[38rem] rounded-full blur-3xl opacity-40"
-          style={{ background: "radial-gradient(circle, var(--color-sage), transparent 64%)" }}
+          className="absolute top-1/3 -left-40 w-[38rem] h-[38rem] rounded-full blur-3xl opacity-50"
+          style={{ background: "radial-gradient(circle, rgba(0, 0, 0, 0.3), transparent 64%)" }}
         />
       </div>
 
       <div className="container-x w-full grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
         {/* — Text — */}
         <motion.div style={{ y }} className="lg:col-span-7 relative z-10">
-          <motion.span
-            initial={reduce ? false : { opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: EASE }}
-            className="pill"
-          >
-            <span
-              className="inline-block w-1.5 h-1.5 rounded-full"
-              style={{ background: "var(--color-rose)" }}
-            />
-            {HERO.eyebrow}
-          </motion.span>
-
-          <h1 className="h-hero mt-6" style={{ color: "var(--color-evergreen)" }}>
+          <h1 className="h-hero" style={{ color: "var(--color-cream)" }}>
             {HERO.titleLines.map((line, i) => (
               <motion.span
                 key={i}
@@ -82,7 +70,7 @@ export default function Hero() {
                 {line === HERO.emphasis ? (
                   <em
                     className="italic"
-                    style={{ color: "var(--color-gold-ink)", fontWeight: 420 }}
+                    style={{ color: "var(--color-gold-light)", fontWeight: 600 }}
                   >
                     {line}
                   </em>
@@ -98,6 +86,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: EASE, delay: 0.45 }}
             className="lead mt-6 max-w-xl"
+            style={{ color: "color-mix(in srgb, #ffffff 88%, transparent)" }}
           >
             {HERO.sub}
           </motion.p>
@@ -108,15 +97,15 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: EASE, delay: 0.58 }}
             className="mt-8 flex flex-wrap items-center gap-3"
           >
-            <a href="#contact" className="btn btn-primary">
+            <a href="#contact" className="btn btn-gold">
               {HERO.ctaPrimary}
-              <ArrowRight width={18} height={18} />
+              <ArrowRight className="btn-arrow" width={18} height={18} />
             </a>
             <a
               href={CONTACT.startHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-ghost"
+              className="btn btn-ghost-dark"
             >
               <Instagram width={18} height={18} />
               {HERO.ctaSecondary}
@@ -134,14 +123,14 @@ export default function Hero() {
                 key={t}
                 className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[0.76rem] sm:text-[0.8rem] font-medium leading-none"
                 style={{
-                  borderColor: "var(--color-line)",
-                  color: "var(--color-muted)",
-                  background: "color-mix(in srgb, var(--color-ivory) 65%, transparent)",
+                  borderColor: "color-mix(in srgb, var(--color-cream) 30%, transparent)",
+                  color: "color-mix(in srgb, #ffffff 90%, transparent)",
+                  background: "color-mix(in srgb, #ffffff 8%, transparent)",
                 }}
               >
                 <span
                   className="w-1.5 h-1.5 rounded-full shrink-0"
-                  style={{ background: "var(--color-gold)" }}
+                  style={{ background: "var(--color-gold-light)" }}
                 />
                 {t}
               </li>
@@ -230,6 +219,19 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {/* organic hand-drawn divider — terracotta „mușcă" în ivory (culoarea PressBar) */}
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        className="pointer-events-none absolute inset-x-0 bottom-[-1px] w-full"
+        style={{ height: "clamp(26px, 4.5vw, 52px)", color: "var(--color-ivory)" }}
+        viewBox="0 0 1440 64"
+        preserveAspectRatio="none"
+        fill="currentColor"
+      >
+        <path d="M0 44 C90 24 200 56 340 46 C480 36 560 14 720 28 C880 42 980 18 1120 30 C1240 40 1360 46 1440 36 L1440 64 L0 64 Z" />
+      </svg>
     </section>
   );
 }

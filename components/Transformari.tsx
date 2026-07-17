@@ -15,12 +15,12 @@ export default function Transformari() {
     <section
       id="rezultate"
       className="section relative overflow-hidden"
-      style={{ background: "var(--color-evergreen)", color: "var(--color-cream)" }}
+      style={{ background: "var(--color-rose)", color: "var(--color-cream)" }}
     >
       <div
         aria-hidden
-        className="absolute -top-24 -left-24 w-[34rem] h-[34rem] rounded-full blur-3xl opacity-[0.14]"
-        style={{ background: "radial-gradient(circle, var(--color-sage), transparent 65%)" }}
+        className="absolute -top-24 -left-24 w-[34rem] h-[34rem] rounded-full blur-3xl opacity-[0.1]"
+        style={{ background: "radial-gradient(circle, var(--color-gold-light), transparent 65%)" }}
       />
       <div className="container-x relative">
         <div className="max-w-2xl">
@@ -35,7 +35,7 @@ export default function Transformari() {
           <Reveal delay={0.1}>
             <p
               className="mt-5 text-[1.08rem]"
-              style={{ color: "color-mix(in srgb, var(--color-cream) 80%, transparent)" }}
+              style={{ color: "color-mix(in srgb, var(--color-cream) 92%, transparent)" }}
             >
               {TRANSFORMARI.intro}
             </p>
@@ -66,7 +66,7 @@ export default function Transformari() {
                 className="absolute inset-0 flex items-end p-4 lg:p-5"
                 style={{
                   background:
-                    "linear-gradient(to top, rgba(14,22,18,0.9) 0%, rgba(14,22,18,0.28) 44%, transparent 70%)",
+                    "linear-gradient(to top, rgba(30,24,18,0.9) 0%, rgba(30,24,18,0.28) 44%, transparent 70%)",
                 }}
               >
                 <figcaption>
@@ -96,7 +96,7 @@ export default function Transformari() {
         <Reveal>
           <p
             className="mt-7 text-[0.8rem] max-w-3xl"
-            style={{ color: "color-mix(in srgb, var(--color-cream) 55%, transparent)" }}
+            style={{ color: "color-mix(in srgb, var(--color-cream) 80%, transparent)" }}
           >
             {TRANSFORMARI.disclaimer}
           </p>

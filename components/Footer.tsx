@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import AvocadoMark from "./AvocadoMark";
 import { NAV, CONTACT, FOOTER } from "@/lib/content";
 import { Facebook, Instagram, ArrowUpRight } from "./icons";
 
@@ -12,8 +13,16 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ background: "var(--color-evergreen)", color: "var(--color-cream)" }}>
-      <div className="container-x py-16 lg:py-20">
+    <footer
+      className="relative overflow-hidden"
+      style={{ background: "var(--color-rose)", color: "var(--color-cream)" }}
+    >
+      <AvocadoMark
+        variant="outline"
+        className="absolute -bottom-14 -right-8 w-64 lg:w-96 -rotate-12 pointer-events-none"
+        style={{ color: "var(--color-cream)", opacity: 0.09 }}
+      />
+      <div className="container-x py-16 lg:py-20 relative">
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-5">
             <Logo variant="light" />
@@ -91,7 +100,7 @@ export default function Footer() {
 
         <div
           className="mt-14 pt-7 flex flex-col md:flex-row items-start md:items-center justify-between gap-4"
-          style={{ borderTop: "1px solid var(--color-line-dark)" }}
+          style={{ borderTop: "1px solid color-mix(in srgb, var(--color-cream) 30%, transparent)" }}
         >
           <p className="text-[0.82rem]" style={{ color: "color-mix(in srgb, var(--color-cream) 58%, transparent)" }}>
             {FOOTER.credit}

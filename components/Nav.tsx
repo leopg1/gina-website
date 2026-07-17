@@ -34,12 +34,10 @@ export default function Nav() {
       <div
         className="transition-all duration-500"
         style={{
-          backgroundColor: scrolled
-            ? "color-mix(in srgb, var(--color-cream) 82%, transparent)"
-            : "transparent",
-          backdropFilter: scrolled ? "blur(14px) saturate(1.4)" : "none",
+          backgroundColor: "var(--color-rose)",
+          boxShadow: scrolled ? "0 12px 30px -18px rgba(58, 32, 18, 0.5)" : "none",
           borderBottom: scrolled
-            ? "1px solid var(--color-line)"
+            ? "1px solid rgba(0, 0, 0, 0.10)"
             : "1px solid transparent",
         }}
       >
@@ -53,8 +51,8 @@ export default function Nav() {
               <li key={n.href}>
                 <a
                   href={n.href}
-                  className="link-underline text-[0.94rem] font-medium"
-                  style={{ color: "var(--color-ink)" }}
+                  className="link-underline text-[0.94rem] font-semibold"
+                  style={{ color: "var(--color-cream)" }}
                 >
                   {n.label}
                 </a>
@@ -67,7 +65,7 @@ export default function Nav() {
               href={CONTACT.startHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary text-[0.9rem] py-3 px-5"
+              className="btn btn-gold text-[0.9rem] py-3 px-5"
             >
               <Instagram width={17} height={17} />
               Scrie-mi START
@@ -84,17 +82,17 @@ export default function Nav() {
             <motion.span
               animate={open ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
               className="block w-6 h-[2px] rounded"
-              style={{ background: "var(--color-ink)" }}
+              style={{ background: "var(--color-cream)" }}
             />
             <motion.span
               animate={open ? { opacity: 0 } : { opacity: 1 }}
               className="block w-6 h-[2px] rounded"
-              style={{ background: "var(--color-ink)" }}
+              style={{ background: "var(--color-cream)" }}
             />
             <motion.span
               animate={open ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
               className="block w-6 h-[2px] rounded"
-              style={{ background: "var(--color-ink)" }}
+              style={{ background: "var(--color-cream)" }}
             />
           </button>
         </nav>
@@ -108,7 +106,7 @@ export default function Nav() {
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.3 }}
             className="lg:hidden fixed inset-0 top-[74px] z-40"
-            style={{ background: "var(--color-cream)" }}
+            style={{ background: "var(--color-rose)" }}
             role="dialog"
             aria-modal="true"
             aria-label="Meniu de navigare"
@@ -126,7 +124,11 @@ export default function Nav() {
                       href={n.href}
                       onClick={() => setOpen(false)}
                       className="font-display block py-3 border-b"
-                      style={{ fontSize: "1.75rem", color: "var(--color-evergreen)" }}
+                      style={{
+                        fontSize: "1.75rem",
+                        color: "var(--color-cream)",
+                        borderColor: "rgba(255, 252, 246, 0.25)",
+                      }}
                     >
                       {n.label}
                     </a>
@@ -138,19 +140,22 @@ export default function Nav() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="btn btn-primary mt-8 w-full"
+                className="btn btn-gold mt-8 w-full"
               >
                 <Instagram width={18} height={18} />
                 Scrie-mi START
               </a>
-              <p className="mt-6 lead text-[0.95rem]">
+              <p
+                className="mt-6 text-[0.95rem]"
+                style={{ color: "color-mix(in srgb, var(--color-cream) 85%, transparent)" }}
+              >
                 Sau scrie-mi pe Instagram: <br />
                 <a
                   href={CONTACT.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold"
-                  style={{ color: "var(--color-evergreen)" }}
+                  style={{ color: "var(--color-cream)" }}
                 >
                   {CONTACT.instagramHandle}
                 </a>

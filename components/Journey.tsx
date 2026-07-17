@@ -93,10 +93,10 @@ export default function Journey() {
         <Reveal delay={0.15}>
           <div
             className="mt-6 p-7 lg:p-8 rounded-[1.5rem] flex flex-col md:flex-row md:items-center gap-6 justify-between"
-            style={{ background: "var(--color-evergreen)", color: "var(--color-cream)" }}
+            style={{ background: "var(--color-rose)", color: "var(--color-cream)" }}
           >
             <div className="flex items-start gap-4 max-w-2xl">
-              <span className="text-2xl leading-none shrink-0" aria-hidden>💚</span>
+              <span className="text-2xl leading-none shrink-0" aria-hidden>🤍</span>
               <p
                 className="font-display"
                 style={{ fontSize: "clamp(1.1rem, 0.95rem + 0.7vw, 1.4rem)", lineHeight: 1.35, color: "var(--color-cream)" }}
@@ -108,11 +108,11 @@ export default function Journey() {
               href={CONTACT.startHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-on-dark shrink-0"
+              className="btn btn-gold shrink-0"
             >
               <Instagram width={18} height={18} />
               Scrie-mi START
-              <ArrowRight width={16} height={16} />
+              <ArrowRight width={16} height={16} className="btn-arrow" />
             </a>
           </div>
         </Reveal>

@@ -1,7 +1,9 @@
 import Reveal from "./Reveal";
 import { TESTIMONIALS } from "@/lib/content";
-import { Quote } from "./icons";
 import CountUp from "./CountUp";
+
+const TIMES = ["09:41", "14:27", "21:05"];
+const TILTS = [-0.4, 0.3, -0.3];
 
 export default function Testimonials() {
   return (
@@ -43,24 +45,54 @@ export default function Testimonials() {
         <div className="mt-12 grid md:grid-cols-3 gap-5">
           {TESTIMONIALS.items.map((t, i) => (
             <Reveal key={i} delay={i * 0.08}>
-              <figure
-                className="h-full card p-7 flex flex-col"
-                style={{ borderRadius: "var(--radius-lg)" }}
-              >
-                <span style={{ color: "var(--color-blush)" }}>
-                  <Quote width={32} height={32} />
-                </span>
+              <figure className="h-full flex flex-col">
+                {/* Bula de mesaj primit */}
                 <blockquote
-                  className="mt-4 flex-1 font-display italic text-balance"
-                  style={{ fontSize: "1.22rem", lineHeight: 1.35, color: "var(--color-forest)" }}
+                  className="flex-1"
+                  style={{
+                    background: "var(--color-parchment)",
+                    border: "1px solid var(--color-line)",
+                    borderRadius: "1.1rem 1.1rem 1.1rem 0.35rem",
+                    padding: "1.25rem",
+                    boxShadow: "var(--shadow-soft)",
+                    transform: `rotate(${TILTS[i % TILTS.length]}deg)`,
+                  }}
                 >
-                  {t.quote}
+                  <p style={{ fontSize: "0.95rem", lineHeight: 1.65, color: "var(--color-ink)" }}>
+                    {t.quote}
+                  </p>
+                  <div
+                    className="mt-2 flex justify-end items-center gap-1"
+                    aria-hidden="true"
+                  >
+                    <span className="text-[0.68rem]" style={{ color: "var(--color-faint)" }}>
+                      {TIMES[i % TIMES.length]}
+                    </span>
+                    <span className="text-[0.72rem]" style={{ color: "var(--color-faint)" }}>
+                      ✓✓
+                    </span>
+                  </div>
                 </blockquote>
-                <figcaption
-                  className="mt-5 pt-4 text-[0.85rem] font-medium"
-                  style={{ borderTop: "1px solid var(--color-line)", color: "var(--color-muted)" }}
-                >
-                  — {t.author}
+
+                {/* Autor, sub bulă */}
+                <figcaption className="mt-3 flex items-center gap-2.5 pl-1">
+                  <span
+                    className="rounded-full flex items-center justify-center font-display"
+                    style={{
+                      width: "2rem",
+                      height: "2rem",
+                      background: "color-mix(in srgb, var(--color-blush) 60%, var(--color-ivory))",
+                      border: "1px solid var(--color-line)",
+                      color: "var(--color-clay)",
+                      fontSize: "0.9rem",
+                    }}
+                    aria-hidden="true"
+                  >
+                    {t.author.charAt(0)}
+                  </span>
+                  <span className="text-[0.85rem] font-semibold" style={{ color: "var(--color-forest)" }}>
+                    {t.author}
+                  </span>
                 </figcaption>
               </figure>
             </Reveal>

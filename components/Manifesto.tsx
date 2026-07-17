@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
-import { Check } from "./icons";
+import AvocadoMark from "./AvocadoMark";
+import Squiggle from "./Squiggle";
 import { MANIFESTO } from "@/lib/content";
 
 export default function Manifesto() {
@@ -13,6 +14,10 @@ export default function Manifesto() {
           <h2 className="h1 mt-5 text-balance" style={{ color: "var(--color-evergreen)" }}>
             {MANIFESTO.title}
           </h2>
+          <Squiggle
+            className="mx-auto mt-3 h-2.5 w-44"
+            style={{ color: "var(--color-gold)" }}
+          />
         </Reveal>
 
         <div className="mt-8 space-y-5 max-w-2xl mx-auto">
@@ -52,7 +57,7 @@ export default function Manifesto() {
                 className="pill w-full sm:w-auto justify-center text-center"
                 style={{ fontSize: "0.82rem", padding: "0.6rem 0.9rem" }}
               >
-                <Check width={15} height={15} style={{ color: "var(--color-moss)", flexShrink: 0 }} />
+                <AvocadoMark className="w-3.5 shrink-0" style={{ color: "var(--color-moss)" }} />
                 {b}
               </li>
             ))}

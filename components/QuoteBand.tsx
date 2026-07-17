@@ -21,7 +21,7 @@ export default function QuoteBand() {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(24,37,29,0.82) 0%, rgba(24,37,29,0.72) 50%, rgba(24,37,29,0.86) 100%)",
+            "linear-gradient(180deg, rgba(189,61,31,0.9) 0%, rgba(189,61,31,0.82) 50%, rgba(189,61,31,0.94) 100%)",
         }}
       />
       <div className="container-x relative py-20 text-center mx-auto max-w-3xl">

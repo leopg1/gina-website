@@ -54,7 +54,7 @@ export default function Services() {
                     className="absolute top-5 right-5 text-[0.66rem] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full"
                     style={{
                       background: "var(--color-blush)",
-                      color: "#6f3a22",
+                      color: "var(--color-clay)",
                       letterSpacing: "0.08em",
                     }}
                   >
@@ -62,7 +62,7 @@ export default function Services() {
                   </span>
                 )}
                 <span
-                  className="inline-flex items-center justify-center w-12 h-12 rounded-2xl"
+                  className="icon-chip inline-flex items-center justify-center w-12 h-12 rounded-2xl"
                   style={{
                     background: "color-mix(in srgb, var(--color-sage) 20%, var(--color-ivory))",
                     color: "var(--color-forest)",

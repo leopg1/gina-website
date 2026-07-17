@@ -1,4 +1,5 @@
 import { PRESS } from "@/lib/content";
+import AvocadoMark from "./AvocadoMark";
 
 export default function PressBar() {
   const items = [...PRESS.items, ...PRESS.items];
@@ -33,9 +34,10 @@ export default function PressBar() {
                 >
                   {it}
                 </span>
-                <span
-                  className="w-1.5 h-1.5 rounded-full"
-                  style={{ background: "var(--color-gold)" }}
+                <AvocadoMark
+                  variant="outline"
+                  className="w-4 shrink-0 mx-1"
+                  style={{ color: "var(--color-gold)" }}
                 />
               </span>
             ))}

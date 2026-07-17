@@ -35,7 +35,6 @@ export const NAV = [
 ];
 
 export const HERO = {
-  eyebrow: "Fondatoarea Reeducării Alimentare în România",
   titleLines: ["Nu ai nevoie", "de încă o dietă.", "Ai nevoie de un proces."],
   emphasis: "Ai nevoie de un proces.",
   sub: "Te învăț să mănânci fără frustrări, fără foame și fără să numeri caloriile. Îți recapeți silueta și o păstrezi pentru tot restul vieții — cu liniște în relația cu mâncarea.",

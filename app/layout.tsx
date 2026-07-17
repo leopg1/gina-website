@@ -1,21 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Shantell_Sans, Nunito } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import StructuredData from "@/components/StructuredData";
 
-const fraunces = Fraunces({
+const shantell = Shantell_Sans({
   subsets: ["latin", "latin-ext"],
   display: "swap",
-  variable: "--font-fraunces",
+  variable: "--font-shantell",
   style: ["normal", "italic"],
-  axes: ["opsz"],
 });
 
-const manrope = Manrope({
+const nunito = Nunito({
   subsets: ["latin", "latin-ext"],
   display: "swap",
-  variable: "--font-manrope",
+  variable: "--font-nunito",
+  style: ["normal", "italic"],
 });
 
 const SITE_URL = "https://healthybyginna.ro";
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f6f1e7",
+  themeColor: "#fbf6ec",
   width: "device-width",
   initialScale: 1,
 };
@@ -79,7 +79,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ro" className={`${fraunces.variable} ${manrope.variable}`}>
+    <html lang="ro" className={`${shantell.variable} ${nunito.variable}`}>
       <body>
         <StructuredData />
         <SmoothScroll />
