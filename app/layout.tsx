@@ -23,22 +23,22 @@ const SITE_URL = "https://healthybyginna.ro";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Gina Tăujan — Psihonutriționist · Reeducare Alimentară",
+    default: "Gina Tăujan — Psihonutriționist · Nutriție & Lifestyle",
     template: "%s · Healthy by Ginna",
   },
   description:
-    "Reeducare alimentară cu Gina Tăujan: fără diete, fără foame, fără numărat calorii. Program 1:1 pe 56 de zile, curs online și o comunitate de ~39.000 de oameni.",
+    "Gina Tăujan, psihonutriționist: fără diete, fără foame, fără numărat calorii. Programul de reeducare 1:1, pe 56 de zile, și o comunitate de ~39.000 de oameni.",
   keywords: [
-    "reeducare alimentară",
     "psihonutriționist",
     "Gina Tăujan",
     "Healthy by Ginna",
     "anti-dietă",
-    "program reeducare alimentară",
+    "nutriție anti-dietă",
     "slăbit fără dietă",
     "relația cu mâncarea",
-    "curs nutriție online",
+    "program nutriție 1:1",
     "nutriționist online",
+    "stil de viață sănătos",
   ],
   authors: [{ name: "Gina Tăujan" }],
   creator: "Gina Tăujan",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     locale: "ro_RO",
     url: SITE_URL,
     siteName: "Healthy by Ginna — Gina Tăujan",
-    title: "Gina Tăujan — Reeducare Alimentară, nu dietă",
+    title: "Gina Tăujan — Un stil de viață, nu o dietă",
     description:
       "Redescoperă libertatea în relația cu mâncarea. Fără foame, fără calorii, fără interdicții — un proces care ține pe viață.",
     images: [
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gina Tăujan — Reeducare Alimentară, nu dietă",
+    title: "Gina Tăujan — Un stil de viață, nu o dietă",
     description: "Fără diete, fără foame, fără numărat calorii. Un proces care ține pe viață.",
     images: ["/images/og/og-cover.jpg"],
   },

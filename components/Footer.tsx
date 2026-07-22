@@ -7,9 +7,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
   const links = [
     { label: "Programul 1:1 · scrie-mi START", href: CONTACT.startHref },
-    { label: "Curs de Reeducare Alimentară", href: CONTACT.courseMain },
-    { label: "Keepin' Up With Ginny", href: CONTACT.kuwg },
     { label: CONTACT.instagramHandle, href: CONTACT.instagram },
+    { label: "Facebook · HealthybyGinna", href: CONTACT.facebook },
   ];
 
   return (

@@ -42,7 +42,11 @@ export default function Nav() {
         }}
       >
         <nav className="container-x flex items-center justify-between h-[74px]">
-          <a href="#top" aria-label="Acasă — Gina Tăujan · Healthy by Ginna">
+          <a
+            href="#top"
+            aria-label="Acasă — Gina Tăujan · Healthy by Ginna"
+            className="flex items-center"
+          >
             <Logo compact />
           </a>
 

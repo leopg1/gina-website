@@ -176,7 +176,7 @@ export default function Contact() {
 
             <Reveal delay={0.16}>
               <a
-                href={CONTACT.courses}
+                href={CONTACT.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-6 rounded-[1.3rem] flex items-start gap-3"
@@ -187,13 +187,13 @@ export default function Contact() {
                 </span>
                 <div>
                   <h3 className="font-display" style={{ fontSize: "1.14rem", color: "var(--color-evergreen)", fontWeight: 460 }}>
-                    Preferi în ritmul tău?
+                    Vrei să mă cunoști întâi?
                   </h3>
                   <p className="text-[0.9rem] mt-0.5" style={{ color: "var(--color-muted)" }}>
-                    Cursul de Reeducare Alimentară te așteaptă pe enspire.ro.
+                    Postez aproape zilnic: rețete, transformări și viața mea cu mâncarea.
                   </p>
                   <span className="inline-flex items-center gap-2 mt-2 text-[0.88rem] font-semibold" style={{ color: "var(--color-forest)" }}>
-                    <span className="link-underline">Vezi cursul</span>
+                    <span className="link-underline">Vezi profilul</span>
                     <ArrowUpRight width={14} height={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
                 </div>

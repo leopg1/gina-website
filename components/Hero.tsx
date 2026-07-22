@@ -163,7 +163,7 @@ export default function Hero() {
                 loop
                 playsInline
                 preload="metadata"
-                aria-label="Gina Tăujan vorbind despre reeducarea alimentară"
+                aria-label="Gina Tăujan vorbind despre relația cu mâncarea"
               />
 
               {/* sound toggle */}

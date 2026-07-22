@@ -21,7 +21,7 @@ export const ALT: Record<string, string> = {
   "transform-2":
     "Transformare reală înainte și după: talie și spate vizibil mai definite, văzute din spate",
   "transform-3":
-    "Transformare reală înainte și după: abdomen mai tonifiat după reeducarea alimentară",
+    "Transformare reală înainte și după: abdomen mai tonifiat după schimbarea alimentației",
   "transform-4":
     "Transformare reală înainte și după: mai multă energie și un zâmbet regăsit",
   "transform-5":

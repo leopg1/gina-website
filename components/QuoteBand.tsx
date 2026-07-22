@@ -46,7 +46,7 @@ export default function QuoteBand() {
             className="mt-6 mx-auto max-w-xl text-[1.02rem]"
             style={{ color: "color-mix(in srgb, var(--color-cream) 82%, transparent)" }}
           >
-            Mâncare vie, de sezon, colorată — nu interdicții și porții cântărite. Așa se face pace cu mâncarea.
+            Mâncare vie, de sezon, colorată. Fără interdicții, fără porții cântărite. Așa se face pace cu mâncarea.
           </p>
         </Reveal>
       </div>
