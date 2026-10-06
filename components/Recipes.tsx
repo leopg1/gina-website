@@ -94,7 +94,7 @@ export default function Recipes() {
         <Reveal>
           <p className="mt-6 flex items-center gap-2 text-[0.92rem]" style={{ color: "var(--color-muted)" }}>
             <ArrowUpRight width={16} height={16} style={{ color: "var(--color-gold-ink)" }} />
-            Toate rețetele sunt gătite de mine — dovada că sănătos poate fi și delicios.
+            Toate sunt gătite de Gina, în bucătăria ei.
           </p>
         </Reveal>
       </div>

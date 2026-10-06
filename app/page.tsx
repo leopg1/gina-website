@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import PressBar from "@/components/PressBar";
 import Manifesto from "@/components/Manifesto";
 import About from "@/components/About";
+import Media from "@/components/Media";
 import Method from "@/components/Method";
 import Services from "@/components/Services";
 import Journey from "@/components/Journey";
@@ -27,6 +28,7 @@ export default function Home() {
         <PressBar />
         <Manifesto />
         <About />
+        <Media />
         <Method />
         <Services />
         <Journey />

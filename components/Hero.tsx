@@ -210,10 +210,10 @@ export default function Hero() {
               style={{ borderRadius: "1rem" }}
             >
               <div className="font-display text-2xl leading-none" style={{ color: "var(--color-gold)" }}>
-                7+
+                ~10
               </div>
               <div className="text-[0.66rem] mt-1" style={{ color: "var(--color-muted)" }}>
-                ani experiență
+                ani de practică
               </div>
             </motion.div>
           </motion.div>

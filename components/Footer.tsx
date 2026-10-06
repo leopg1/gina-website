@@ -6,7 +6,7 @@ import { Facebook, Instagram, ArrowUpRight } from "./icons";
 export default function Footer() {
   const year = new Date().getFullYear();
   const links = [
-    { label: "Programul 1:1 · scrie-mi START", href: CONTACT.startHref },
+    { label: "Programul 1:1 · scrie START", href: CONTACT.startHref },
     { label: CONTACT.instagramHandle, href: CONTACT.instagram },
     { label: "Facebook · HealthybyGinna", href: CONTACT.facebook },
   ];
@@ -76,7 +76,7 @@ export default function Footer() {
 
           <div className="lg:col-span-4">
             <h3 className="eyebrow" style={{ color: "color-mix(in srgb, var(--color-cream) 60%, transparent)" }}>
-              Lucrează cu mine
+              Lucrează cu Gina
             </h3>
             <ul className="mt-5 space-y-3">
               {links.map((l) => (

@@ -111,7 +111,7 @@ export default function Journey() {
               className="btn btn-gold shrink-0"
             >
               <Instagram width={18} height={18} />
-              Scrie-mi START
+              Scrie START
               <ArrowRight width={16} height={16} className="btn-arrow" />
             </a>
           </div>

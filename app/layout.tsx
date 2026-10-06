@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s · Healthy by Ginna",
   },
   description:
-    "Gina Tăujan, psihonutriționist: fără diete, fără foame, fără numărat calorii. Programul de reeducare 1:1, pe 56 de zile, și o comunitate de ~39.000 de oameni.",
+    "Gina Tăujan, psihonutriționist, invitată la Super Neatza pe Antena 1 și citată de Digi24. Programul ei de reeducare alimentară durează 56 de zile și se face online.",
   keywords: [
     "psihonutriționist",
     "Gina Tăujan",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     locale: "ro_RO",
     url: SITE_URL,
     siteName: "Healthy by Ginna — Gina Tăujan",
-    title: "Gina Tăujan — Un stil de viață, nu o dietă",
+    title: "Gina Tăujan, psihonutriționist · Reeducare alimentară",
     description:
-      "Redescoperă libertatea în relația cu mâncarea. Fără foame, fără calorii, fără interdicții — un proces care ține pe viață.",
+      "Programul de reeducare alimentară al Ginei Tăujan: 56 de zile, online, fără cântar și fără să rabzi de foame.",
     images: [
       {
         url: "/images/og/og-cover.jpg",
@@ -61,8 +61,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gina Tăujan — Un stil de viață, nu o dietă",
-    description: "Fără diete, fără foame, fără numărat calorii. Un proces care ține pe viață.",
+    title: "Gina Tăujan, psihonutriționist · Reeducare alimentară",
+    description: "Programul de reeducare alimentară al Ginei Tăujan: 56 de zile, online, fără cântar și fără să rabzi de foame.",
     images: ["/images/og/og-cover.jpg"],
   },
   robots: { index: true, follow: true },

@@ -120,7 +120,7 @@ export default function Contact() {
                 )}
               </p>
               <p className="mt-4 text-[0.8rem]" style={{ color: "var(--color-faint)" }}>
-                Îți deschid Instagram cu mesajul pregătit — nu se stochează nimic pe site.
+                Se deschide Instagram cu mesajul gata scris. Pe site nu se salvează nimic.
               </p>
             </form>
           </Reveal>
@@ -141,10 +141,10 @@ export default function Contact() {
                   </span>
                   <div>
                     <h3 className="font-display" style={{ fontSize: "1.18rem", color: "var(--color-cream)", fontWeight: 460 }}>
-                      Scrie-mi START pe Instagram
+                      Scrie START pe Instagram
                     </h3>
                     <p className="text-[0.9rem]" style={{ color: "color-mix(in srgb, var(--color-cream) 92%, transparent)" }}>
-                      Cel mai rapid răspuns, direct de la mine
+                      Așa primești cel mai repede răspuns, chiar de la Gina.
                     </p>
                     <span className="inline-flex items-center gap-2 mt-2 text-[0.9rem] font-semibold" style={{ color: "var(--color-gold-light)" }}>
                       {CONTACT.instagramHandle}
@@ -168,7 +168,7 @@ export default function Contact() {
                     100% online
                   </h3>
                   <p className="text-[0.9rem] mt-0.5" style={{ color: "var(--color-muted)" }}>
-                    Lucrăm oriunde ai fi — din toată țara și din diaspora, în ritmul tău.
+                    Nu contează în ce oraș sau în ce țară stai. Totul se face online.
                   </p>
                 </div>
               </div>
@@ -187,10 +187,10 @@ export default function Contact() {
                 </span>
                 <div>
                   <h3 className="font-display" style={{ fontSize: "1.14rem", color: "var(--color-evergreen)", fontWeight: 460 }}>
-                    Vrei să mă cunoști întâi?
+                    Vrei s-o cunoști mai întâi?
                   </h3>
                   <p className="text-[0.9rem] mt-0.5" style={{ color: "var(--color-muted)" }}>
-                    Postez aproape zilnic: rețete, transformări și viața mea cu mâncarea.
+                    Gina postează aproape în fiecare zi rețete, rezultate de la oamenii din program și ce mănâncă ea.
                   </p>
                   <span className="inline-flex items-center gap-2 mt-2 text-[0.88rem] font-semibold" style={{ color: "var(--color-forest)" }}>
                     <span className="link-underline">Vezi profilul</span>
@@ -223,7 +223,7 @@ export default function Contact() {
                   <Facebook width={18} height={18} />
                 </a>
                 <span className="text-[0.85rem]" style={{ color: "var(--color-muted)" }}>
-                  Urmărește-mă zilnic pe rețele
+                  O găsești pe Instagram și pe Facebook
                 </span>
               </div>
             </Reveal>

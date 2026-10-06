@@ -72,7 +72,7 @@ export default function Nav() {
               className="btn btn-gold text-[0.9rem] py-3 px-5"
             >
               <Instagram width={17} height={17} />
-              Scrie-mi START
+              Scrie START
             </a>
           </div>
 
@@ -147,13 +147,13 @@ export default function Nav() {
                 className="btn btn-gold mt-8 w-full"
               >
                 <Instagram width={18} height={18} />
-                Scrie-mi START
+                Scrie START
               </a>
               <p
                 className="mt-6 text-[0.95rem]"
                 style={{ color: "color-mix(in srgb, var(--color-cream) 85%, transparent)" }}
               >
-                Sau scrie-mi pe Instagram: <br />
+                Sau direct pe Instagram: <br />
                 <a
                   href={CONTACT.instagram}
                   target="_blank"

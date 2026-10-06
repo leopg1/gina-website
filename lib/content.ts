@@ -1,12 +1,16 @@
 // Toate textele site-ului Gina Tăujan · Healthy by Ginna.
-// Scrise în vocea ei reală: fraze din bio-ul și interviurile ei, ton de story de Instagram.
-// Ofertă actuală: DOAR Programul de reeducare 1:1. Cursul online (499 lei) s-a încheiat.
+//
+// Două voci, separate intenționat:
+//   • GINA: secțiunea despre ea, la persoana a III-a, cu surse verificate (lib/press.ts).
+//   • Restul: despre reeducarea alimentară și program, adresat cititorului cu „tu”.
+// Citatele puse între ghilimele sunt cuvintele ei reale, din interviuri.
 //
 // ⚠️ TODO ÎNAINTE DE PUBLICARE (cere-i Ginei):
 //   1. Numărul de WhatsApp business — momentan canalul „START” e Instagram DM (funcțional).
 //   2. Prețul Programului 1:1 — acum e „personalizat, la cerere”.
 //   3. Domeniul real (folosit acum: healthybyginna.ro).
 //   4. Acordul pentru testimonialele reale (sunt mesajele ei publice, anonimizate).
+//   5. Anul exact în care a pornit primul program (sursele indică 2016).
 
 export const CONTACT = {
   brand: "Gina Tăujan",
@@ -15,233 +19,281 @@ export const CONTACT = {
   startWord: "START",
   instagram: "https://www.instagram.com/healthybyginna/",
   instagramHandle: "@healthybyginna",
-  // Deep-link direct în DM-ul de Instagram (canalul ei real pentru „scrie-mi START”).
+  // Deep-link direct în DM-ul de Instagram (canalul ei real pentru „START”).
   startHref: "https://ig.me/m/healthybyginna",
   facebook: "https://www.facebook.com/healthybyginna/",
 };
 
 export const NAV = [
-  { label: "Despre", href: "#despre" },
+  { label: "Despre Gina", href: "#despre" },
+  { label: "În presă", href: "#presa" },
   { label: "Metoda", href: "#metoda" },
   { label: "Program", href: "#programe" },
   { label: "Rezultate", href: "#rezultate" },
-  { label: "Rețete", href: "#retete" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const HERO = {
-  // Tagline-ul ei real, din bio: „Redescoperă libertatea în relația cu mâncarea."
+  // Tagline-ul ei (din brief, de confirmat cu ea): „Redescoperă libertatea în relația cu mâncarea."
   titleLines: ["Redescoperă", "libertatea", "în relația cu mâncarea."],
   emphasis: "libertatea",
-  sub: "Sunt Gina, psihonutriționist. De peste 7 ani îi învăț pe oameni să mănânce normal: fără foame, fără cântar, fără numărat calorii. Și da, se poate.",
-  ctaPrimary: "Începe Programul 1:1",
-  ctaSecondary: "Scrie-mi START",
+  sub: "Programul de reeducare alimentară al Ginei Tăujan, psihonutriționist. Opt săptămâni în care reînveți să mănânci ca un om normal, cu mâncare de la piață și fără să rabzi de foame. Totul se face online.",
+  ctaPrimary: "Vreau în program",
+  ctaSecondary: "Scrie START",
   trust: [
-    "7+ ani experiență",
-    "~39.000 comunitate",
-    "Ca la TV",
+    "Invitată la Super Neatza, Antena 1",
+    "Citată de Digi24",
+    "~39.000 pe Instagram",
     "56 de zile",
-    "100% online",
+    "Online, din orice oraș",
   ],
 };
 
 export const PRESS = {
-  label: "M-ai văzut la",
+  label: "Au vorbit despre ea",
   items: [
-    "Super Neatza cu Răzvan și Dani · Antena 1",
-    "Numai de Bine · Antena 3 CNN",
-    "Cu Ela la doctor · podcast",
-    "Portrait of a Woman by Cristina Ich",
-    "Rawmantic",
-    "les_figs",
+    "Super Neatza · Antena 1",
+    "Digi24",
+    "Cu Ela la doctor",
+    "Capital",
+    "Ciao.ro",
+    "Click!",
+    "CSID",
   ],
 };
 
 export const MANIFESTO = {
-  eyebrow: "Filozofia mea",
+  eyebrow: "Ce e reeducarea alimentară",
   title: "Fă pace cu mâncarea.",
   paragraphs: [
-    "La mine nu-ți iau nimic. Nici pâinea, nici cafeaua cu lapte, nici mesele cu ai tăi. Slăbești mâncând. Știu cum sună, dar exact asta fac de peste 7 ani. Iar când corpul simte că ai grijă de el, se relaxează și dă drumul la ce are în plus.",
-    "Știu cum e. Ții dietă, slăbești, pui la loc, te simți vinovată. Se iese din cercul ăsta. Am văzut-o de sute de ori.",
+    "Reeducarea alimentară nu vine cu o listă de lucruri pe care n-ai voie să le mănânci. Pâinea rămâne, cafeaua cu lapte rămâne, iar duminica mănânci liniștită ce a pus mama pe masă. Se schimbă felul în care îți faci farfuria în restul săptămânii, și asta se întâmplă treptat.",
+    "Dacă ai mai ținut diete, știi deja scenariul. Primele două săptămâni merg bine, apoi te saturi, scapi un weekend de sub control și kilogramele se întorc, de obicei cu încă două pe deasupra. Aici lucrezi în ritmul tău, cu mâncare obișnuită, până când ajungi să mănânci așa fără să te mai abții.",
   ],
-  // Citatul ei real, din interviuri.
+  // Din brief (postările ei); de confirmat.
   pull: "Rezultatele apar. Nu peste noapte. Ci atunci când începi, în sfârșit, să ai răbdare cu tine.",
   bullets: ["Fără foame", "Fără cântar", "Fără numărat calorii", "Gândim în culori"],
 };
 
-export const ABOUT = {
-  eyebrow: "Despre mine",
-  title: "Am reînvățat să mănânc. Acum te învăț și pe tine.",
+// ——— Secțiunea despre ea: persoana a III-a, fiecare afirmație cu sursă ———
+// `refs` trimite la cheile din BIO_SOURCES (lib/press.ts).
+export const GINA = {
+  eyebrow: "Despre Gina",
+  title: "Gina Tăujan, psihonutriționist",
+  lead: "Face reeducare alimentară de aproape zece ani. Ce scrie mai jos se poate verifica: la finalul fiecărui paragraf găsești numărul sursei, iar lista completă e sub cronologie.",
   paragraphs: [
-    "Am început cu mine. Mi-am schimbat felul în care mănânc și nu m-am mai oprit. De peste 7 ani fac asta cu oamenii, unul câte unul.",
-    "Astăzi lucrez doar unu la unu, în programul meu de reeducare de 56 de zile. Fără cursuri, fără planuri de-a gata. Eu și omul din fața mea, zi de zi.",
-    "În rest, gătesc și mănânc colorat, de sezon, cu poftă. Mă găsești online, de oriunde ai fi, și uneori la les_figs, locul meu preferat de delicatese.",
+    {
+      text: "A început cu propria farfurie. Și-a schimbat întâi ea alimentația, a văzut că are mai multă energie și că zilele îi trec altfel, și abia după aceea a început să lucreze cu alți oameni. Într-un interviu din 2023 spunea că tot ce recomandă a încercat întâi pe pielea ei.",
+      refs: ["nightclubber", "clinique"],
+    },
+    {
+      text: "Primul program de reeducare alimentară l-a pus pe picioare prin 2016. Clinica la care a lucrat mai târziu îl descria drept un program care „nu este nici dietă, nici regim”. Regulile de bază au rămas aceleași de atunci: nu numeri calorii, nu cântărești mâncarea și nu stai cu stomacul gol.",
+      refs: ["enspire", "clinique", "ela"],
+    },
+    {
+      text: "Din 2020 a lucrat la The Clinique Herăstrău, în București, unde apărea în echipă ca nutriționist licențiat și psihonutriționist. Le analiza pacienților obiceiurile alimentare și le făcea planuri personalizate. Pe pagina ei de la clinică scria că obținuse de curând și certificarea în psihonutriție, ramura care se ocupă de legătura dintre ce mâncăm și ce simțim.",
+      refs: ["clinique", "smark"],
+    },
+    {
+      text: "Din septembrie 2025 vine regulat la „Super Neatza”, pe Antena 1, unde a vorbit despre mâncatul emoțional de sărbători, despre ce mâncăm când suntem obosiți și despre capcana curelor de slăbire. Între timp, Digi24 a început s-o întrebe pentru articolele de sănătate: cât să bei pe caniculă, ce e cu postul intermitent, ce lapte se potrivește la stomac sensibil.",
+      refs: ["a1", "digi"],
+    },
+    {
+      text: "Pe Ela Crăciun a avut-o mai întâi clientă. În mai 2024, Ela a chemat-o în podcastul ei, „Cu Ela la doctor”, și a povestit acolo că, lucrând cu Gina, a reînvățat să mănânce. Click!, CSID și Ciao.ro au preluat povestea în zilele următoare.",
+      refs: ["ela", "click"],
+    },
+    {
+      text: "A colaborat cu Bianca Adam și cu Nuță Kiki și a fost invitată la „Portrait of a Woman”, maratonul Cristinei Ich. Câțiva ani a avut și cursuri online pe Enspire, printre care unul pentru familie, care pornea de la alimentația din sarcină și ajungea la diversificarea bebelușului. Acum lucrează doar unu la unu. Pe Instagram o urmăresc în jur de 39.000 de oameni.",
+      refs: ["bianca", "poaw", "familie"],
+    },
   ],
-  quoteCard: "Vreau să gândim în culori.",
-  credentials: [
-    { title: "Psihonutriționist", desc: "Lucrez cu farfuria și cu ce e în spatele ei." },
-    { title: "7+ ani de lucru cu oamenii", desc: "Sute de oameni ghidați, unul câte unul." },
-    { title: "Ca la TV și în presă", desc: "Super Neatza, Antena 3, podcasturi." },
-    { title: "O comunitate de ~39.000", desc: "Oameni care au ales să mănânce normal." },
+  facts: [
+    { k: "Titlu", v: "Nutriționist licențiat și psihonutriționist" },
+    { k: "Lucrează din", v: "aprox. 2016" },
+    { k: "Program", v: "1:1, online" },
+    { k: "Instagram", v: "@healthybyginna, ~39.000" },
   ],
+  timeline: [
+    { year: "2016", text: "Primul program de reeducare alimentară", ref: "enspire" },
+    { year: "2020", text: "Intră în echipa The Clinique Herăstrău. Filmează cu Bianca Adam", ref: "smark" },
+    { year: "2021", text: "Certificarea în psihonutriție apare pe pagina ei de la clinică", ref: "clinique" },
+    { year: "2022", text: "Lansează cursul online pe Enspire. Campanie cu cofetăria Rawmantic", ref: "rawmantic" },
+    { year: "2023", text: "Interviu pentru Nightclubber.ro", ref: "nightclubber" },
+    { year: "2024", text: "Podcastul „Cu Ela la doctor”. Pornește seria săptămânală Keepin' Up With Ginny", ref: "ela" },
+    { year: "2025", text: "Din septembrie, invitată la Super Neatza, pe Antena 1. Curs pentru familie", ref: "a1" },
+    { year: "2026", text: "Digi24 o citează tot mai des pe teme de nutriție", ref: "digi" },
+  ],
+  // Citatul de sub portret: cuvintele ei, din podcastul cu Ela Crăciun.
+  quoteCard: "Când eu mă gândesc doar să slăbesc, am ajuns doar până la jumătatea drumului.",
+  quoteSource: "Cu Ela la doctor, 2024",
+};
+
+export const MEDIA = {
+  eyebrow: "În presă",
+  title: "La TV și în presă",
+  intro:
+    "Emisiunile în care a fost invitată și articolele în care e citată. Fiecare duce la pagina originală, ca să le poți vedea cu ochii tăi.",
+  tvLabel: "Emisiuni și podcasturi",
+  pressLabel: "Articole",
+  more: "Vezi toate articolele",
+  less: "Arată mai puține",
 };
 
 export const METHOD = {
-  eyebrow: "Cum lucrez",
-  title: "Ce înseamnă să mănânci echilibrat",
-  sub: "Nu vin cu reguli și interdicții. Corpul tău îți spune deja ce are nevoie. Eu doar te învăț să-l asculți.",
+  eyebrow: "Metoda",
+  title: "Cum funcționează",
+  sub: "Regulile sunt puține. Partea grea e să le ții și într-o marți oarecare, și vineri seara, și de-asta ai pe cineva lângă tine.",
   steps: [
     {
       n: "01",
-      title: "Pornim de la tine",
-      desc: "Ce mănânci acum, cum arată zilele tale, ce îți dorești. Plecăm de la viața ta așa cum e ea azi.",
+      title: "Pornești de unde ești",
+      desc: "Prima discuție e despre ce mănânci acum: la ce oră, cât timp ai de gătit, ce nu-ți place deloc. Planul se face pe viața pe care o ai, cu serviciu, copii și zile în care nu apuci să mănânci la prânz.",
     },
     {
       n: "02",
-      title: "Fără liste de interdicții",
-      desc: "Nu tai nimic din ce iubești. Nici măcar ciocolata. Învățăm cum și cât.",
+      title: "Nu tai nimic",
+      desc: "Ciocolata rămâne. Lucrezi la cât și când o mănânci, iar de cele mai multe ori pofta scade singură după câteva săptămâni.",
     },
     {
       n: "03",
-      title: "Pas cu pas",
-      desc: "Schimbăm câte un obicei. Unul. Dacă ieri ai mâncat o ciorbă de burtă, azi poți încerca o ciorbă de lobodă cu leuștean. Când s-a lipit, trecem la următorul.",
+      title: "Un obicei pe rând",
+      desc: "Nu schimbi totul de luni. Azi poate fi o ciorbă de lobodă cu leuștean în locul celei de burtă, mâine altceva. Treci la următorul obicei abia când primul a devenit firesc.",
     },
     {
       n: "04",
-      title: "Gândim în culori",
-      desc: "Farfurii colorate, mâncare de sezon, multe legume. Simplu și cu gust.",
+      title: "Gândești în culori",
+      desc: "Dacă ai trei-patru culori în farfurie, aproape sigur ai destule legume. E un test pe care îl faci în două secunde, acasă sau la restaurant.",
     },
   ],
 };
 
 export const SERVICES = {
-  eyebrow: "Programul 1:1",
-  title: "Cu ce te pot ajuta",
-  sub: "Programul 1:1 este pentru tine dacă simți că ai încercat multe variante până acum, dar încă îți dorești o relație mai liniștită cu mâncarea și cu propriul corp. Astea sunt lucrurile cu care vin oamenii la mine cel mai des.",
+  eyebrow: "Pentru cine e",
+  title: "De ce vin oamenii",
+  sub: "Puțini vin doar pentru kilograme. De obicei e un amestec de balonare, poftă de dulce seara și oboseala că le-au încercat deja pe toate.",
   items: [
     {
-      title: "Slăbire și menținere",
-      desc: "Nu doar că vine slăbitul. De aici vine chiar menținutul. Fac rost de siluetă și o păstrez pentru tot restul vieții.",
+      title: "Slăbit și menținut",
+      desc: "Slăbești fără să-ți fie foame și fără grabă. Și cum nu trăiești pe voință, nici kilogramele n-au de ce să se întoarcă după două luni.",
       tag: "cel mai des",
-      cta: "Scrie-mi START",
+      cta: "Scrie START",
       href: CONTACT.startHref,
     },
     {
-      title: "Digestie liniștită",
-      desc: "Te balonezi de la orice și seara te simți umflată? Știu. Punem ordine în mese, în ritmul tău, fără să-ți întorc viața pe dos.",
+      title: "Digestie",
+      desc: "Te balonezi după aproape orice masă și seara abia îți închei pantalonii? De multe ori problema ține de ritmul meselor și de combinații, și se poate rezolva fără să-ți întorci viața pe dos.",
       tag: "",
-      cta: "Hai să vorbim despre asta",
+      cta: "Întreabă de digestie",
       href: CONTACT.startHref,
     },
     {
-      title: "Echilibru hormonal",
-      desc: "Pe lista mea de impresionat nu sunt kilogramele. Sunt analizele mai bune, durerile de menstruație care dispar, un corp pregătit pentru sarcină.",
+      title: "Hormoni și ciclu",
+      desc: "La unele femei, cea mai mare diferență e la ciclu. Vine mai regulat, doare mai puțin, iar corpul e mai pregătit pentru o sarcină.",
       tag: "",
-      cta: "Povestim în DM?",
+      cta: "Întreabă de hormoni",
       href: CONTACT.startHref,
     },
     {
-      title: "Mame, după sarcină",
-      desc: "Îți recapeți energia și silueta încet, cum poți tu acum. Nu se grăbește nimeni.",
+      title: "După sarcină",
+      desc: "Cu un bebeluș în brațe și nopți nedormite, nu e momentul pentru restricții. Îți revii încet, și ca energie, și ca siluetă, cât te lasă cel mic.",
       tag: "",
-      cta: "Când ești gata, scrie-mi",
+      cta: "Scrie când ești gata",
       href: CONTACT.startHref,
     },
     {
       title: "În doi sau cu familia",
-      desc: "Vii cu partenerul sau schimbați obiceiurile în toată casa. Merge mai ușor împreună.",
+      desc: "Când toată casa mănâncă la fel, gătești o singură dată și nu mai stai cu ochii pe punga de chipsuri a partenerului.",
       tag: "",
-      cta: "Veniți împreună?",
+      cta: "Veniți împreună",
       href: CONTACT.startHref,
     },
     {
-      title: "Poftele și ronțăitul",
-      desc: "„Șoricelul” din capul pieptului care cere ceva dulce după fiecare masă? Îl știu pe de rost. De multe ori e doar lipsa apei sau o masă sărită. Ne uităm de unde vine și îl liniștim.",
+      title: "Pofte și ronțăit",
+      desc: "Dulcele de după masă are de multe ori o cauză banală: ai băut prea puțină apă, ai sărit o masă sau ai avut o zi lungă. După ce afli care e, pofta se potolește.",
       tag: "",
-      cta: "Începem de aici",
+      cta: "Începe cu poftele",
       href: CONTACT.startHref,
     },
   ],
 };
 
 export const JOURNEY = {
-  eyebrow: "Cum decurge Programul 1:1",
-  title: "56 de zile, în doi pași",
+  eyebrow: "Cum decurge programul",
+  title: "Opt săptămâni, în două etape",
   intro:
-    "Nu primești un plan pe mail și baftă. Suntem în legătură în fiecare zi, 56 de zile.",
+    "Nu primești un PDF pe mail cu „baftă”. În cele 56 de zile vorbești cu Gina în fiecare zi.",
   phases: [
     {
       label: "Etapa 1",
       days: "Zilele 1–35",
-      title: "Planuri personalizate",
-      desc: "Îți fac planurile după viața ta. Ce îți place, ce nu, cât timp ai de gătit. Mâncare normală, de la piață, nu pudre și cutiuțe.",
+      title: "Planuri făcute pentru tine",
+      desc: "Planurile pleacă de la ce-ți place, ce nu mănânci și cât timp ai de stat la cratiță. Ingredientele le găsești la piață sau la magazinul de la colț, nu în plicuri cu pudră.",
       points: [
-        "Planuri pe gustul și programul tău",
-        "Mâncăm normal, nu numărăm nimic",
-        "Îmi trimiți mesele, eu îți răspund",
-        "Ajustăm din mers, după cum te simți",
+        "Planuri după gustul și programul tău",
+        "Nu cântărești și nu numeri nimic",
+        "Îi trimiți poze cu mesele și primești răspuns",
+        "Planul se schimbă din mers, dacă e nevoie",
       ],
     },
     {
       label: "Etapa 2",
       days: "Zilele 36–56",
       title: "Te descurci singură",
-      desc: "Ultimele trei săptămâni sunt despre tine, fără mine. Înveți să-ți compui singură mesele, ca să nu mai ai nevoie de nimeni de aici încolo.",
+      desc: "În ultimele trei săptămâni îți faci singură mesele, iar Gina rămâne pe fir pentru întrebări. La final știi ce să pui în farfurie fără să mai întrebi pe nimeni.",
       points: [
-        "Îți faci farfuria fără să mă mai întrebi nimic",
-        "Obiceiurile devin ale tale",
-        "Restaurant, vacanță, zile pline? Te descurci",
-        "Ieși cu liniște în relația cu mâncarea",
+        "Îți compui singură farfuria",
+        "Mănânci așa fără să te mai gândești",
+        "Știi ce să comanzi la restaurant sau în concediu",
+        "Nu te mai certi cu mâncarea",
       ],
     },
   ],
   support:
-    "În toate cele 56 de zile îmi scrii direct mie. Nu unui asistent, nu unui robot. Mie.",
+    "Din prima până în ultima zi îi scrii direct Ginei. Mesajele le citește și le răspunde ea.",
 };
 
 // numele imaginilor (media.json) se leagă în lib/media + scripts/process-images.mjs
 // Titlurile corespund fotografiilor reale gătite de ea.
 export const RECIPES = {
-  eyebrow: "Bucătăria mea",
+  eyebrow: "Din bucătărie",
   title: "Gândim în culori",
   intro:
-    "Așa arată mâncarea la mine acasă. Simplă, colorată, făcută cu poftă:",
+    "Câteva farfurii gătite de Gina acasă, din ce era de sezon. Nu-ți trebuie nimic special ca să le faci.",
   items: [
     { name: "recipe-1", title: "Mic dejun cu ou și cartof dulce" },
     { name: "recipe-2", title: "Omletă verde cu ierburi de grădină" },
-    { name: "recipe-3", title: "Salată colorată cu chiftele de năut" },
+    { name: "recipe-3", title: "Salată cu chiftele de năut" },
     { name: "recipe-4", title: "Hummus de ardei copt cu semințe" },
     { name: "recipe-5", title: "Terci de ovăz cu curmale și cocos" },
-    { name: "recipe-6", title: "Apă infuzată cu grapefruit" },
+    { name: "recipe-6", title: "Apă cu grapefruit" },
   ],
 };
 
 export const TRANSFORMARI = {
-  eyebrow: "Transformări reale",
-  title: "Așa arată răbdarea cu tine.",
+  eyebrow: "Rezultate",
+  title: "Rezultatele lor",
   intro:
-    "Oameni adevărați din programul meu. Fără înfometare și fără minuni peste noapte.",
+    "Oameni care au trecut prin program și au acceptat să-și arate pozele. Nimeni n-a ținut foame, iar kilogramele n-au plecat peste noapte.",
   disclaimer:
-    "Rezultate individuale, publicate cu acordul lor. Fiecare corp are ritmul lui.",
+    "Pozele sunt publicate cu acordul lor. Rezultatele diferă de la om la om.",
   // TODO: de cerut Ginei detaliul real din spatele fiecărei poze (durată, context) — titlurile devin și mai personale.
   items: [
-    { name: "transform-1", title: "Rochia aia roșie, în sfârșit", caption: "În ținuta ei preferată" },
-    { name: "transform-2", title: "Talie nouă, fără nicio dietă", caption: "Doar mese normale" },
-    { name: "transform-3", title: "Abdomen mai tonifiat", caption: "Cu răbdare, pas cu pas" },
-    { name: "transform-4", title: "Pofta de mișcare a venit singură", caption: "Nimeni n-a obligat-o" },
-    { name: "transform-5", title: "Rezultate și pentru el", caption: "Da, merge și la bărbați" },
-    { name: "transform-6", title: "Piele mai curată", caption: "S-a văzut și pe ten" },
+    { name: "transform-1", title: "Rochia roșie, în sfârșit", caption: "Cea pe care o ținea în dulap" },
+    { name: "transform-2", title: "Talie nouă", caption: "Cu mese normale" },
+    { name: "transform-3", title: "Abdomen mai tonifiat", caption: "În câteva luni" },
+    { name: "transform-4", title: "Mișcarea a venit de la sine", caption: "Nu a obligat-o nimeni" },
+    { name: "transform-5", title: "Merge și la bărbați", caption: "Aceleași reguli" },
+    { name: "transform-6", title: "Ten mai curat", caption: "Un efect la care nu se aștepta" },
   ],
 };
 
 export const TESTIMONIALS = {
-  eyebrow: "Din conversațiile mele",
-  title: "Ce îmi scriu oamenii",
+  eyebrow: "Mesaje primite",
+  title: "Ce îi scriu oamenii",
   items: [
     {
       quote:
         "Când am apelat eu la Gina, s-a întâmplat un miracol și practic am reînvățat să mănânc. Dacă respect regulile și mănânc corect, nu mai simt nevoia de dulciuri.",
-      author: "Ela Crăciun",
+      author: "Ela Crăciun, în podcastul „Cu Ela la doctor”",
       kind: "quote",
     },
     {
@@ -258,106 +310,110 @@ export const TESTIMONIALS = {
     },
   ],
   stats: [
-    { to: 39000, decimals: 0, prefix: "~", suffix: "", label: "comunitate Instagram" },
-    { to: 7, decimals: 0, prefix: "", suffix: "+", label: "ani experiență" },
+    { to: 39000, decimals: 0, prefix: "~", suffix: "", label: "urmăritori pe Instagram" },
+    { to: 30, decimals: 0, prefix: "", suffix: "+", label: "apariții la TV și în presă" },
     { to: 56, decimals: 0, prefix: "", suffix: "", label: "zile de program" },
-    { to: 100, decimals: 0, prefix: "", suffix: "%", label: "online, de oriunde" },
+    { to: 100, decimals: 0, prefix: "", suffix: "%", label: "online" },
   ],
 };
 
 export const PRICING = {
-  eyebrow: "Cum lucrăm",
-  title: "Lucrez doar unu la unu",
-  sub: "Am renunțat la cursuri și la planurile de-a gata. Vreau să fiu cu adevărat acolo pentru fiecare om cu care lucrez.",
+  eyebrow: "Cum lucrezi cu Gina",
+  title: "Doar unu la unu",
+  sub: "Cursurile online s-au încheiat. Acum Gina lucrează doar individual, ca să aibă timp să răspundă fiecăruia.",
   cards: [
     {
       name: "Programul de reeducare 1:1",
       price: null,
       currency: "",
       highlight: true,
-      desc: "56 de zile în care lucrăm împreună, zi de zi. Planuri făcute pentru tine și un om care chiar îți răspunde.",
+      desc: "Opt săptămâni cu planuri făcute pentru tine și cu cineva care chiar îți răspunde la mesaje.",
       includes: [
-        "Planuri personalizate, primele 35 de zile",
-        "Autonomie, ultimele 21 de zile",
-        "Mesaje zilnice, direct cu mine",
+        "Planuri personalizate în primele 35 de zile",
+        "Ultimele 21 de zile, pe cont propriu",
+        "Mesaje zilnice direct cu Gina",
         "Mâncare normală, nu porții la gram",
       ],
-      cta: "Scrie-mi START",
+      cta: "Scrie START",
       href: CONTACT.startHref,
     },
     {
-      name: "Mă cunoști întâi",
+      name: "Încă te gândești?",
       price: "Gratuit",
       currency: "",
       highlight: false,
-      desc: "Nu e nicio grabă. Vezi cum gândesc și cum arată rezultatele.",
+      desc: "Nu te grăbește nimeni. Uită-te întâi pe Instagram la rețete, la rezultate și la cum vorbește Gina despre mâncare.",
       includes: [
-        "Rețete simple și colorate",
-        "Transformările oamenilor din program",
-        "Mesajele mele despre relația cu mâncarea",
-        "Când ești gata, scrie-mi START",
+        "Rețete simple, de sezon",
+        "Poveștile oamenilor din program",
+        "Sfaturi despre relația cu mâncarea",
+        "Când te hotărăști, scrii START",
       ],
-      cta: "Urmărește-mă pe Instagram",
+      cta: "Urmărește pe Instagram",
       href: CONTACT.instagram,
     },
   ],
-  note: "Nu am preț afișat. Sincer, nu există două programe la fel. Scrie-mi START și îți răspund chiar eu.",
+  note: "Prețul nu e afișat pentru că fiecare program se face de la zero. Scrie START pe Instagram și primești toate detaliile.",
 };
 
 export const FAQ = {
-  eyebrow: "Mă întrebați des",
-  title: "Ce mă întreabă toată lumea",
+  eyebrow: "Întrebări",
+  title: "Întrebări frecvente",
   items: [
     {
       q: "E o dietă?",
-      a: "Pe bune, nu. Dietele sunt exact motivul pentru care oamenii ajung la mine. Înveți să mănânci normal, fără să-ți mai fie frică de mâncare.",
+      a: "Nu. O dietă se termină la un moment dat și de cele mai multe ori te întorci exact de unde ai plecat. Reeducarea alimentară schimbă felul în care mănânci de acum înainte. Mulți ajung aici după câteva diete ținute cu dinții.",
     },
     {
       q: "Trebuie să număr caloriile sau să cântăresc mâncarea?",
-      a: "Nu. La mine nu se numără calorii și nu se cântărește nimic. Gândim în culori. De cifre ne-am săturat toate.",
+      a: "Nu. Nu numeri calorii și nu cântărești nimic. Te uiți la farfurie, la cât de colorată e și la cum te simți după masă.",
     },
     {
-      q: "Renunț la ce-mi place?",
-      a: "Asta e prima frică a tuturor. Nu trebuie să renunțăm la nimic. Schimbarea vine natural, fără stres.",
+      q: "Trebuie să renunț la ce-mi place?",
+      a: "Aproape toată lumea întreabă asta la început. Mâncarea preferată rămâne. Se schimbă cât de des o mănânci și ce pui lângă ea.",
     },
     {
       q: "Cât durează?",
-      a: "56 de zile. În primele 35 primești planuri făcute pentru tine, iar în ultimele 21 înveți să te descurci singură.",
+      a: "56 de zile. În primele 35 primești planuri făcute pentru tine, iar în ultimele 21 înveți să-ți faci singură mesele.",
     },
     {
-      q: "Merge dacă mănânc la restaurant sau comand?",
-      a: "Da, sigur. La restaurant îmi pot comanda o salată lângă care mai pun două garnituri, o porție de cartofi copți sau sparanghel la grătar. Sau legume cu pește. Exact asta înveți: să alegi oriunde ai fi.",
+      q: "Merge dacă mănânc des la restaurant sau comand?",
+      a: "Da. Înveți să citești meniul altfel: o salată cu două garnituri, cartofi copți, pește cu legume, sparanghel la grătar. Variante de felul ăsta găsești aproape peste tot.",
     },
     {
       q: "Cât costă?",
-      a: "Programul e făcut pe tine, așa că și prețul e personalizat. Scrie-mi START pe Instagram și vorbim.",
+      a: "Depinde de ce ai nevoie, așa că prețul îl afli după prima discuție. Scrie START pe Instagram și Gina îți trimite detaliile.",
     },
     {
       q: "Vin pentru digestie și hormoni, nu pentru slăbit. Mă ajută?",
-      a: "Da. Multe dintre fetele cu care lucrez vin pentru digestie, menstruație fără dureri sau energie. Kilogramele sunt doar o parte din poveste.",
+      a: "Da. Multe femei vin pentru balonare, dureri menstruale sau oboseală, iar kilogramele sunt pe locul doi.",
+    },
+    {
+      q: "Cine e Gina Tăujan?",
+      a: "Psihonutriționist, face reeducare alimentară din jurul lui 2016. E invitată la Super Neatza, pe Antena 1, iar Digi24 o citează des. Mai multe, cu surse, găsești la „Despre Gina”.",
     },
   ],
 };
 
 export const CONTACT_SECTION = {
-  eyebrow: "Hai să începem",
+  eyebrow: "Începe",
   title: "Ultimul tău „de luni” poate fi azi",
   intro:
-    "Dacă simți că e momentul să faci pace cu mâncarea și să construiești obiceiuri care să reziste, scrie-mi START pe Instagram și îți dau toate detaliile. 🤍",
+    "Scrie START pe Instagram și primești detaliile despre program. Îți răspunde chiar Gina.",
   formLabels: {
     name: "Numele tău",
     phone: "Instagram sau telefon",
-    message: "Ce te aduce aici?",
-    messagePlaceholder: "Scrie-mi în două vorbe ce te frământă.",
-    submit: "Scrie-mi START pe Instagram",
+    message: "Ce te-a adus aici?",
+    messagePlaceholder: "Câteva rânduri despre ce te frământă.",
+    submit: "Trimite pe Instagram",
     success:
-      "Ți-am copiat mesajul și îți deschid Instagram. Lipește-l în conversație și îți răspund cât pot de repede. 🤍",
+      "Mesajul e copiat și se deschide Instagram. Lipește-l în conversație și primești răspuns cât mai repede.",
   },
-  dmMsg: "START — Bună, Gina! Aș vrea să aflu mai multe despre programul 1:1.",
+  dmMsg: "START. Bună, Gina! Aș vrea să aflu mai multe despre programul 1:1.",
 };
 
 export const FOOTER = {
   tagline: "We don't diet. We lifestyle. 🍉",
   credit:
-    "Gina Tăujan · Psihonutriționist · 7+ ani alături de oameni · #WEDONTDIETWELIFESTYLE",
+    "Gina Tăujan · Psihonutriționist · #WEDONTDIETWELIFESTYLE",
 };

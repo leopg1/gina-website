@@ -15,7 +15,7 @@ export default function StructuredData() {
         alternateName: "Healthy by Ginna",
         jobTitle: "Psihonutriționist",
         description:
-          "Psihonutriționist cu peste 7 ani de experiență într-un proces anti-dietă: fără foame, fără numărat calorii, fără cântărit — cu libertate și liniște în relația cu mâncarea.",
+          "Nutriționist licențiat și psihonutriționist. Lucrează din 2016 cu reeducare alimentară: fără foame, fără numărat calorii, fără cântărit. Invitată la Super Neatza pe Antena 1, citată de Digi24.",
         url: SITE,
         image: `${SITE}/images/portraits/portrait-store.webp`,
         gender: "Female",

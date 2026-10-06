@@ -22,7 +22,7 @@ export default function FloatingCTA() {
           href={CONTACT.startHref}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Scrie-mi START pe Instagram"
+          aria-label="Scrie START pe Instagram"
           initial={{ opacity: 0, scale: 0.7, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.7, y: 20 }}
@@ -38,7 +38,7 @@ export default function FloatingCTA() {
           <span style={{ color: "var(--color-evergreen)" }}>
             <Instagram width={22} height={22} />
           </span>
-          <span className="hidden sm:inline">Scrie-mi START</span>
+          <span className="hidden sm:inline">Scrie START</span>
         </motion.a>
       )}
     </AnimatePresence>
