@@ -79,7 +79,7 @@ export const MANIFESTO = {
 export const GINA = {
   eyebrow: "Despre Gina",
   title: "Gina Tăujan, psihonutriționist",
-  lead: "Face reeducare alimentară de aproape zece ani. Ce scrie mai jos se poate verifica: la finalul fiecărui paragraf găsești numărul sursei, iar lista completă e sub cronologie.",
+  lead: "Face reeducare alimentară de aproape zece ani. Numerele mici de la finalul paragrafelor trimit la surse: interviuri, emisiuni și articole în care apare.",
   paragraphs: [
     {
       text: "A început cu propria farfurie. Și-a schimbat întâi ea alimentația, a văzut că are mai multă energie și că zilele îi trec altfel, și abia după aceea a început să lucreze cu alți oameni. Într-un interviu din 2023 spunea că tot ce recomandă a încercat întâi pe pielea ei.",
@@ -151,7 +151,7 @@ export const METHOD = {
     {
       n: "02",
       title: "Nu tai nimic",
-      desc: "Ciocolata rămâne. Lucrezi la cât și când o mănânci, iar de cele mai multe ori pofta scade singură după câteva săptămâni.",
+      desc: "Ciocolata nu dispare din viața ta. Lucrezi la cât și când o mănânci, iar de cele mai multe ori pofta scade singură după câteva săptămâni.",
     },
     {
       n: "03",
@@ -173,7 +173,7 @@ export const SERVICES = {
   items: [
     {
       title: "Slăbit și menținut",
-      desc: "Slăbești fără să-ți fie foame și fără grabă. Și cum nu trăiești pe voință, nici kilogramele n-au de ce să se întoarcă după două luni.",
+      desc: "Slăbești fără să-ți fie foame și fără grabă. Nu ții totul în frâu cu dinții strânși, așa că nu vine nici momentul în care cedezi și pui totul la loc.",
       tag: "cel mai des",
       cta: "Scrie START",
       href: CONTACT.startHref,
@@ -248,7 +248,7 @@ export const JOURNEY = {
     },
   ],
   support:
-    "Din prima până în ultima zi îi scrii direct Ginei. Mesajele le citește și le răspunde ea.",
+    "Din prima până în ultima zi îi scrii direct Ginei. Ea îți citește mesajele și tot ea îți răspunde.",
 };
 
 // numele imaginilor (media.json) se leagă în lib/media + scripts/process-images.mjs
@@ -327,7 +327,7 @@ export const PRICING = {
       price: null,
       currency: "",
       highlight: true,
-      desc: "Opt săptămâni cu planuri făcute pentru tine și cu cineva care chiar îți răspunde la mesaje.",
+      desc: "56 de zile cu planuri făcute pentru tine și cu cineva care chiar îți răspunde la mesaje.",
       includes: [
         "Planuri personalizate în primele 35 de zile",
         "Ultimele 21 de zile, pe cont propriu",
@@ -370,7 +370,7 @@ export const FAQ = {
     },
     {
       q: "Trebuie să renunț la ce-mi place?",
-      a: "Aproape toată lumea întreabă asta la început. Mâncarea preferată rămâne. Se schimbă cât de des o mănânci și ce pui lângă ea.",
+      a: "Aproape toată lumea întreabă asta la început. Mâncarea preferată o păstrezi. Se schimbă cât de des o mănânci și ce pui lângă ea.",
     },
     {
       q: "Cât durează?",
